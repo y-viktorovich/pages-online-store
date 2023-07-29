@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: $blue;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        min-height: 105px;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        margin-right: 3.3rem;
+    }
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        &:hover {
+            .header__logo-icon {
+                fill: darken($yellow, 20%);
+            }
+        }
+    }
+
+    &__logo-icon {
+        display: inline-block;
+        width: 24.5px;
+        height: 28px;
+
+        fill: $yellow;
+
+        margin-right: .9rem;
+
+        transition: fill .2s linear;
+    }
+
+    &__logo-name {
+        font-family: 'Inter', sans-serif;
+        font-size: 2.8rem;
+        color: $white;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+}

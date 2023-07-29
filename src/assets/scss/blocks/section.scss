@@ -1,0 +1,28 @@
+.section {
+
+    padding: 14.5rem 0;
+
+    &__header {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 4.5rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -2px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 55px;
+            height: 3px;
+
+            background-color: $yellow;
+            margin: 2.2rem auto 5.7rem;
+        }
+    }
+}
