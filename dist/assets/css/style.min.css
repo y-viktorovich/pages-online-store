@@ -535,6 +535,9 @@ body {
   background-color: transparent;
   padding: 1.05em 2.78em;
 }
+.btn--big {
+  padding: 1.05em 5.36em;
+}
 
 .intro {
   background-color: #1B3764;
@@ -639,6 +642,11 @@ body {
 .statistic--assortment .statistic__header-item {
   color: #1B3764;
 }
+.statistic--assortment .statistic__header-item span {
+  padding-left: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
 .statistic--assortment .statistic__item {
   color: #969AA0;
 }
@@ -673,9 +681,9 @@ body {
   color: #B4C7E7;
   line-height: 1.7;
   letter-spacing: -1px;
+  width: 33%;
   padding-left: 3rem;
   margin-right: 8rem;
-  width: 33%;
 }
 
 .section {
@@ -862,6 +870,10 @@ body {
   text-decoration: underline;
 }
 
+.statistic__header-item span {
+  padding-left: 0;
+}
+
 .company {
   display: flex;
   flex-wrap: wrap;
@@ -1006,6 +1018,62 @@ body {
   object-position: center;
 }
 
+.chapters__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -2rem 3.9rem;
+}
+.chapters__col {
+  width: 50%;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+.chapters__item {
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 2rem 0 5.4rem;
+  background-color: #fff;
+  box-shadow: 0 35px 25px rgba(4, 11, 20, 0.04);
+}
+.chapters__header {
+  margin-bottom: 1.4rem;
+}
+.chapters__title a {
+  font-family: "Cardo", sans-serif;
+  font-size: 2.4rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+.chapters__title a:hover {
+  text-decoration: underline;
+}
+.chapters__content {
+  margin-bottom: 2.5rem;
+}
+.chapters__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 1.8;
+}
+.chapters__info {
+  max-width: 318px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  color: #969AA0;
+  line-height: 1.7;
+  margin: 3.2rem auto 3rem;
+}
+.chapters__info-link {
+  color: #1B3764;
+}
+.chapters__info-link:hover {
+  text-decoration: none;
+}
+
 /* Helpers
 =============================*/
 .img {
@@ -1016,4 +1084,8 @@ body {
 
 .color-white {
   color: #fff;
+}
+
+.text-center {
+  text-align: center;
 }
