@@ -1,0 +1,58 @@
+.statistic {
+    &--assortment {
+        margin-bottom: 3rem;
+
+        .statistic__header-item {
+            color: $blue;
+        }
+
+        .statistic__item {
+            color: $gray;
+        }
+    }
+
+    &__header-item {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2.4rem;
+        color: $white;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -1px;
+        text-align: left;
+
+        position: relative;
+
+        padding-left: 3rem;
+        margin-bottom: 0.3rem;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+
+            transform: translateY(-50%);
+
+            background-color: $yellow;
+            border-radius: 50%;
+
+        }
+    }
+
+    &__item {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $blue-light;
+        line-height: 1.7;
+        letter-spacing: -1px;
+
+        padding-left: 3rem;
+        margin-right: 8rem;
+        width: 33%;
+    }
+}
