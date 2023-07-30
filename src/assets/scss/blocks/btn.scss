@@ -5,11 +5,12 @@
     vertical-align: middle;
 
 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 1.9rem;
     color: $blue;
     font-weight: 700;
     line-height: 1.25;
+    letter-spacing: 1px;
 
 
     background-color: $yellow;
@@ -20,5 +21,10 @@
     &:hover {
         background-color: darken($yellow, 15%);
         color: $white;
+    }
+
+    &--transparent {
+        background-color: transparent;
+        padding: 1.05em 2.78em;
     }
 }

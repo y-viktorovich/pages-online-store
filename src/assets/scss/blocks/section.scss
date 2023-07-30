@@ -1,5 +1,4 @@
 .section {
-
     padding: 14.5rem 0 11.5rem;
 
     &__header {
@@ -7,7 +6,8 @@
         text-align: center;
     }
 
-    &__title {
+    &__title,
+    .info__title {
         font-family: 'Cardo', sans-serif;
         font-size: 4.5rem;
         color: $blue;
@@ -24,5 +24,9 @@
             background-color: $yellow;
             margin: 2.2rem auto 5.7rem;
         }
+    }
+
+    .info__title::after {
+        margin: 2.2rem 0 2.2rem;
     }
 }
