@@ -706,6 +706,9 @@ body {
 .section .info__title::after {
   margin: 2.2rem 0 2.2rem;
 }
+.section--blue {
+  background-color: #F4F8FF;
+}
 
 .assortment {
   display: flex;
@@ -769,6 +772,7 @@ body {
 .info__photo {
   width: 43.21%;
   border: 12px solid #FFCA42;
+  margin-bottom: 3rem;
 }
 .info__photo-item {
   display: block;
@@ -787,6 +791,7 @@ body {
 .info__content {
   width: 56.79%;
   padding: 2rem 0 0 14.2rem;
+  margin-bottom: 3rem;
 }
 .info__text {
   font-family: "Inter", sans-serif;
@@ -856,6 +861,37 @@ body {
 }
 .info__address-content__link:hover {
   text-decoration: underline;
+}
+
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4.85rem;
+}
+.company__item {
+  width: 25%;
+  padding: 0 4.85rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.company__img {
+  margin-bottom: 2.85rem;
+}
+.company__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 2.4rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 0.95rem;
+}
+.company__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  color: #969AA0;
+  line-height: 1.7;
+  letter-spacing: -1px;
 }
 
 /* Helpers

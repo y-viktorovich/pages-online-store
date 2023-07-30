@@ -1,11 +1,12 @@
 .info {
     display: flex;
 
-
     &__photo {
         width: 43.21%;
 
         border: 12px solid $yellow;
+
+        margin-bottom: 3rem;
     }
 
     &__photo-item {
@@ -31,6 +32,8 @@
     &__content {
         width: 56.79%;
         padding: 2rem 0 0 14.2rem;
+
+        margin-bottom: 3rem;
     }
 
     &__text {

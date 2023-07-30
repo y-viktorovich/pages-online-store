@@ -29,4 +29,8 @@
     .info__title::after {
         margin: 2.2rem 0 2.2rem;
     }
+
+    &--blue {
+        background-color: $blue-bg;
+    }
 }
