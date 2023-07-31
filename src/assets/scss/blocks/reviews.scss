@@ -1,0 +1,157 @@
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__content {
+        width: 40.7%;
+        padding-right: 16.1rem;
+    }
+
+    &__title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 4.5rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -1px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 55px;
+            height: 3px;
+
+            background-color: $yellow;
+            margin: 2.7rem 0 2.9rem;
+        }
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.8;
+        letter-spacing: -1px;
+
+        margin-bottom: 4.3rem;
+    }
+
+    &__rating-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $blue;
+        line-height: 1.8;
+        letter-spacing: -1px;
+    }
+
+    &__cards {
+        width: 59.3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 -1.5rem;
+    }
+
+    &__col {
+        width: 50%;
+    }
+
+    &__card {
+        padding: 1.5rem 1.5rem;
+    }
+
+    &__item {
+        padding: 3.6rem 3.1rem;
+
+        background-color: $blue;
+    }
+
+    &__header {
+        margin-bottom: 2.2rem;
+        padding-left: 10rem;
+        min-height: 85px;
+
+        position: relative;
+    }
+
+    &__photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        display: block;
+        width: 85px;
+        height: 85px;
+
+        margin-right: 2rem;
+    }
+
+    &__photo-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+
+    &__name {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2.4rem;
+        color: $white;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -1px;
+
+        margin-bottom: .8rem;
+        padding-top: 1.7rem;
+    }
+
+    &__rating {
+        background-image: url('../images/svg/empty-circle.svg');
+        background-repeat: repeat-x;
+        
+
+        position: relative;
+    }
+
+    &__rating-value {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        background-image: url('../images/svg/circle.svg');
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__rating-count {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2.2rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -1px;
+
+        padding-left: 11rem;
+
+        transform: translateY(-4px);
+    }
+
+    &__description {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2.2rem;
+        color: $white;
+        font-weight: 700;
+        letter-spacing: -1px;
+        line-height: 1.2;
+
+        margin-bottom: 1.2rem;
+    }
+}
