@@ -1,32 +1,32 @@
 @font-face {
   font-family: "Inter";
-  src: url("../../fonts/Inter-Regular.woff") format("woff"), url("../../fonts/Inter-Regular.woff2") format("woff2");
+  src: url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../fonts/Inter-Medium.woff") format("woff"), url("../../fonts/Inter-Medium.woff2") format("woff2");
+  src: url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
   font-weight: 500;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../fonts/Inter-Bold.woff") format("woff"), url("../../fonts/Inter-Bold.woff2") format("woff2");
+  src: url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../fonts/Inter-ExtraBold.woff") format("woff"), url("../../fonts/Inter-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.woff2") format("woff2");
   font-weight: 800;
 }
 @font-face {
   font-family: "Cardo";
-  src: url("../../fonts/Cardo-Italic.woff") format("woff"), url("../../fonts/Cardo-Italic.woff2") format("woff2");
+  src: url("../fonts/Cardo-Italic.woff") format("woff"), url("../fonts/Cardo-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Cardo";
-  src: url("../../fonts/Cardo-Bold.woff") format("woff"), url("../../fonts/Cardo-Bold.woff2") format("woff2");
+  src: url("../fonts/Cardo-Bold.woff") format("woff"), url("../fonts/Cardo-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -964,6 +964,7 @@ body {
   margin-bottom: 3rem;
 }
 .conclusion__col {
+  display: flex;
   width: 50%;
   padding: 1.5rem;
 }
@@ -1020,6 +1021,7 @@ body {
   margin: 0 -2rem 3.9rem;
 }
 .chapters__col {
+  display: flex;
   width: 50%;
   padding: 0 2rem;
   margin-bottom: 4rem;
@@ -1054,6 +1056,9 @@ body {
   font-size: 1.9rem;
   color: #969AA0;
   line-height: 1.8;
+}
+.chapters__footer {
+  margin-top: auto;
 }
 .chapters__info {
   max-width: 318px;
@@ -1194,6 +1199,116 @@ body {
   letter-spacing: -1px;
   line-height: 1.2;
   margin-bottom: 1.2rem;
+}
+
+.articles {
+  display: flex;
+  margin: 0 -1.75rem;
+}
+.articles__col {
+  display: flex;
+  width: 33.3333%;
+  padding: 0 1.75rem;
+  margin-bottom: 6rem;
+}
+.articles__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 35px 25px rgba(4, 11, 20, 0.04);
+}
+.articles__header {
+  min-height: 326px;
+  overflow: hidden;
+}
+.articles__header:hover .articles__header-item__img {
+  scale: 1.2;
+  opacity: 0.9;
+}
+.articles__photo-link {
+  width: 100%;
+  height: 100%;
+}
+.articles__header-item {
+  display: block;
+  max-width: 100%;
+  height: 326px;
+}
+.articles__header-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: scale 1.2s linear, opacity 0.2s linear;
+}
+.articles__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2.7rem 3.2rem 2.7rem 3.1rem;
+}
+.articles__content-title {
+  font-family: "Cardo", sans-serif;
+  font-size: 2.4rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.articles__content-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.articles__content-title a:hover {
+  text-decoration: underline;
+}
+.articles__content-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 1.8;
+  letter-spacing: -1px;
+  margin-bottom: 2.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+.articles__content-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.articles__content-footer__link {
+  font-family: "Cardo", sans-serif;
+  font-size: 1.8rem;
+  color: #1B3764;
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+.articles__content-footer__link:hover {
+  text-decoration: none;
+}
+.articles__content-footer__date {
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+  color: #1B3764;
+  line-height: 1.25;
 }
 
 /* Helpers

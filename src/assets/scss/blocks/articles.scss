@@ -1,0 +1,124 @@
+.articles {
+    display: flex;
+    margin: 0 -1.75rem;
+
+    &__col {
+        display: flex;
+        width: 33.3333%;
+        padding: 0 1.75rem;
+
+        margin-bottom: 6rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        box-shadow: 0 35px 25px rgba($dark, 0.04);
+    }
+
+    &__header {
+        min-height: 326px;
+        overflow: hidden;
+
+        &:hover {
+            .articles__header-item__img {
+                scale: 1.2;
+                opacity: .9;
+            }
+        }
+    }
+
+    &__photo-link {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__header-item {
+        display: block;
+        max-width: 100%;
+        height: 326px;
+    }
+
+    &__header-item__img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        transition: scale 1.2s linear, opacity .2s linear;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 2.7rem 3.2rem 2.7rem 3.1rem;
+    }
+
+    &__content-title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2.4rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -1px;
+
+        margin-bottom: 1.4rem;
+
+        @include hide-text;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__content-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.8;
+        letter-spacing: -1px;
+
+        margin-bottom: 2.7rem;
+
+        @include hide-text;
+
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+
+    &__content-footer {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: auto;
+    }
+
+    &__content-footer__link {
+        font-family: 'Cardo', sans-serif;
+        font-size: 1.8rem;
+        color: $blue;
+        line-height: 1.25;
+        letter-spacing: 1px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__content-footer__date {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.7rem;
+        color: $blue;
+        line-height: 1.25;
+    }
+}

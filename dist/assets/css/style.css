@@ -1253,6 +1253,10 @@ body {
 .reviews {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .reviews__content {
@@ -1267,7 +1271,6 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -1px;
-    max-width: 326px;
 }
 
 .reviews__title::after {

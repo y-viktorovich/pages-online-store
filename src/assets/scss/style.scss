@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "vendor/reset";
+@import "mixins";
 
 html {
     font-size: 10px;
@@ -38,6 +39,7 @@ body {
 @import "blocks/conclusion";
 @import "blocks/chapters";
 @import "blocks/reviews";
+@import "blocks/articles";
 
 
 /* Helpers
