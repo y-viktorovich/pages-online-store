@@ -481,6 +481,7 @@ body {
   font-size: 1.7rem;
   color: #fff;
   font-weight: 500;
+  letter-spacing: -0.01em;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -522,7 +523,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.25;
-  letter-spacing: 1px;
+  letter-spacing: 0.02em;
   background-color: #FFCA42;
   border: 1px solid #FFCA42;
   transition: background-color 0.2s linear, color 0.2s linear;
@@ -559,7 +560,7 @@ body {
   font-weight: 400;
   font-style: italic;
   line-height: 1.5;
-  letter-spacing: -2px;
+  letter-spacing: -0.02em;
   margin-bottom: 1.6rem;
 }
 .intro__suptitle::before {
@@ -577,7 +578,7 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -2px;
+  letter-spacing: -0.02em;
   margin-bottom: 3.2rem;
 }
 .intro__text {
@@ -585,9 +586,9 @@ body {
   font-size: 1.9rem;
   color: #B4C7E7;
   line-height: 1.8;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 4.9rem;
-  max-width: 510px;
+  max-width: 560px;
 }
 .intro__order {
   margin-bottom: 4.9rem;
@@ -598,7 +599,7 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 1.25;
-  letter-spacing: 1px;
+  letter-spacing: 0.02em;
   position: relative;
   margin-left: 3.7rem;
   vertical-align: middle;
@@ -656,7 +657,7 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   text-align: left;
   position: relative;
   padding-left: 3rem;
@@ -680,7 +681,7 @@ body {
   font-size: 1.9rem;
   color: #B4C7E7;
   line-height: 1.7;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   width: 33%;
   padding-left: 3rem;
   margin-right: 8rem;
@@ -700,7 +701,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -2px;
+  letter-spacing: -0.02em;
 }
 .section__title::after,
 .section .info__title::after {
@@ -757,7 +758,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.02em;
 }
 .assortment__main {
   margin-bottom: 3rem;
@@ -767,8 +768,8 @@ body {
   font-size: 1.9rem;
   color: #969AA0;
   line-height: 1.8;
-  letter-spacing: -1px;
-  max-width: 230px;
+  letter-spacing: -0.01em;
+  max-width: 262px;
 }
 .assortment__footer {
   margin-top: auto;
@@ -805,7 +806,7 @@ body {
   font-size: 1.9rem;
   color: #969AA0;
   line-height: 1.8;
-  letter-spacing: 1px;
+  letter-spacing: -0.01em;
   min-width: 605px;
   margin-bottom: 4.4rem;
 }
@@ -826,13 +827,14 @@ body {
   font-size: 5.5rem;
   color: #1B3764;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.02em;
 }
 .info__statistic-item__text {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   color: #969AA0;
   line-height: 1.7;
+  letter-spacing: -0.01em;
 }
 .info__address {
   display: flex;
@@ -853,7 +855,7 @@ body {
   color: #FFCA42;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 0.7rem;
 }
 .info__address-content__link {
@@ -863,7 +865,7 @@ body {
   color: #B4C7E7;
   line-height: 1.8;
   text-decoration: none;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 0.2rem;
 }
 .info__address-content__link:hover {
@@ -890,7 +892,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 0.95rem;
 }
 .company__text {
@@ -898,7 +900,7 @@ body {
   font-size: 1.8rem;
   color: #969AA0;
   line-height: 1.7;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 
 .copy {
@@ -921,7 +923,7 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 .copy__title::after {
   content: "";
@@ -986,7 +988,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 .conclusion__item-text {
   font-family: "Cardo", sans-serif;
@@ -994,7 +996,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.4;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 .conclusion__photo {
   width: 42.31%;
@@ -1029,7 +1031,7 @@ body {
 .chapters__item {
   display: flex;
   flex-direction: column;
-  padding: 4.8rem 2rem 0 5.4rem;
+  padding: 4.8rem 0 0 5.4rem;
   background-color: #fff;
   box-shadow: 0 35px 25px rgba(4, 11, 20, 0.04);
 }
@@ -1043,7 +1045,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 .chapters__title a:hover {
   text-decoration: underline;
@@ -1056,6 +1058,7 @@ body {
   font-size: 1.9rem;
   color: #969AA0;
   line-height: 1.8;
+  letter-spacing: -0.01em;
 }
 .chapters__footer {
   margin-top: auto;
@@ -1082,7 +1085,7 @@ body {
 }
 .reviews__content {
   width: 40.7%;
-  padding-right: 16.1rem;
+  padding-right: 11.1rem;
 }
 .reviews__title {
   font-family: "Cardo", sans-serif;
@@ -1090,7 +1093,8 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
+  max-width: 326px;
 }
 .reviews__title::after {
   content: "";
@@ -1105,7 +1109,7 @@ body {
   font-size: 1.9rem;
   color: #969AA0;
   line-height: 1.8;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 4.3rem;
 }
 .reviews__rating-text {
@@ -1113,7 +1117,7 @@ body {
   font-size: 1.9rem;
   color: #1B3764;
   line-height: 1.8;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 .reviews__cards {
   width: 59.3%;
@@ -1161,7 +1165,7 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 0.8rem;
   padding-top: 1.7rem;
 }
@@ -1187,7 +1191,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   padding-left: 11rem;
   transform: translateY(-4px);
 }
@@ -1196,7 +1200,7 @@ body {
   font-size: 2.2rem;
   color: #fff;
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   line-height: 1.2;
   margin-bottom: 1.2rem;
 }
@@ -1253,7 +1257,7 @@ body {
   color: #1B3764;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 1.4rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1277,7 +1281,7 @@ body {
   font-size: 1.9rem;
   color: #969AA0;
   line-height: 1.8;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 2.7rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1299,7 +1303,7 @@ body {
   font-size: 1.8rem;
   color: #1B3764;
   line-height: 1.25;
-  letter-spacing: 1px;
+  letter-spacing: 0.02em;
 }
 .articles__content-footer__link:hover {
   text-decoration: none;
@@ -1309,6 +1313,73 @@ body {
   font-size: 1.7rem;
   color: #1B3764;
   line-height: 1.25;
+}
+
+.subscribe {
+  padding: 15rem 0;
+  text-align: center;
+}
+.subscribe__inner {
+  padding: 12.1rem 23rem;
+  background-color: #FFCA42;
+}
+.subscribe__content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.subscribe__title::after {
+  background-color: #1B3764;
+  margin: 1.7rem auto 2rem;
+}
+.subscribe__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #1B3764;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  margin-bottom: 3.8rem;
+}
+.subscribe__form {
+  max-width: 840px;
+}
+.subscribe__form .form__group {
+  width: 63%;
+  flex-wrap: wrap;
+}
+.subscribe__form-request {
+  display: flex;
+  align-items: center;
+}
+.subscribe__input {
+  width: 100%;
+  height: 65px;
+  padding: 1.7rem 2.4rem;
+  background-color: #fff;
+  border: 1px solid transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+  color: #1B3764;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  transition: background-color 0.2s linear, border 0.2s linear;
+}
+.subscribe__input::placeholder {
+  color: #969AA0;
+}
+.subscribe__input:focus {
+  background-color: #f7f7f7;
+  border-color: #1B3764;
+}
+.subscribe__input:focus::placeholder {
+  font-size: 0;
+}
+.subscribe__btn {
+  width: 37%;
+  height: 65px;
+  color: #fff;
+  background-color: #1B3764;
+  margin-left: 1.1rem;
 }
 
 /* Helpers

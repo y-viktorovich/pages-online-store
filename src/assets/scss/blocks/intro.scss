@@ -20,7 +20,7 @@
         font-weight: 400;
         font-style: italic;
         line-height: 1.5;
-        letter-spacing: -2px;
+        letter-spacing: -0.02em;
 
         margin-bottom: 1.6rem;
 
@@ -42,7 +42,7 @@
         color: $white;
         font-weight: 700;
         line-height: 1.1;
-        letter-spacing: -2px;
+        letter-spacing: -0.02em;
 
         margin-bottom: 3.2rem;
     }
@@ -52,10 +52,10 @@
         font-size: 1.9rem;
         color: $blue-light;
         line-height: 1.8;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
 
         margin-bottom: 4.9rem;
-        max-width: 510px;
+        max-width: 560px;
     }
 
     &__order {
@@ -68,7 +68,7 @@
         color: $white;
         font-weight: 700;
         line-height: 1.25;
-        letter-spacing: 1px;
+        letter-spacing: .02em;
 
         position: relative;
         margin-left: 3.7rem;

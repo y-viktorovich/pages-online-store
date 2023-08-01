@@ -39,7 +39,7 @@
         font-size: 1.9rem;
         color: $gray;
         line-height: 1.8;
-        letter-spacing: 1px;
+        letter-spacing: -0.01em;
 
         min-width: 605px;
         margin-bottom: 4.4rem;
@@ -66,7 +66,7 @@
         font-size: 5.5rem;
         color: $blue;
         line-height: 1.2;
-        letter-spacing: -1px;
+        letter-spacing: -0.02em;
     }
 
     &__statistic-item__text {
@@ -74,6 +74,7 @@
         font-size: 1.8rem;
         color: $gray;
         line-height: 1.7;
+        letter-spacing: -0.01em;
     }
 
     &__address {
@@ -99,7 +100,7 @@
         color: $yellow;
         font-weight: 700;
         line-height: 1.2;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
 
         margin-bottom: .7rem;
     }
@@ -111,7 +112,8 @@
         color: $blue-light;
         line-height: 1.8;
         text-decoration: none;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
+
 
         margin-bottom: .2rem;
 

@@ -40,7 +40,7 @@
         color: $blue;
         font-weight: 700;
         line-height: 1.2;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
     }
 
     &__item-text {
@@ -49,7 +49,7 @@
         color: $blue;
         font-weight: 700;
         line-height: 1.4;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
     }
 
     &__photo {

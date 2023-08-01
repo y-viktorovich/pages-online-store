@@ -45,7 +45,7 @@
         color: $blue;
         font-weight: 700;
         line-height: 1.2;
-        letter-spacing: -1px;
+        letter-spacing: -0.02em;
     }
 
     &__main {
@@ -57,9 +57,9 @@
         font-size: 1.9rem;
         color: $gray;
         line-height: 1.8;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
 
-        max-width: 230px;
+        max-width: 262px;
     }
 
     &__footer {

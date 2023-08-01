@@ -1,0 +1,85 @@
+.subscribe {
+    padding: 15rem 0;
+    text-align: center;
+
+    &__inner {
+        padding: 12.1rem 23rem;
+        background-color: $yellow;
+    }
+
+    &__content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        &::after {
+            background-color: $blue;
+            margin: 1.7rem auto 2rem;
+        }
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $blue;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+
+        margin-bottom: 3.8rem;
+    }
+
+    &__form {
+        max-width: 840px;
+
+        .form__group {
+            width: 63%;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__form-request {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        width: 100%;
+        height: 65px;
+        padding: 1.7rem 2.4rem;
+        background-color: $white;
+        border: 1px solid transparent;
+
+        font-family: 'Inter', sans-serif;
+        font-size: 1.7rem;
+        color: $blue;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+
+        transition: background-color .2s linear, border .2s linear;
+
+        &::placeholder {
+            color: $gray;
+        }
+
+        &:focus {
+            background-color: darken($white, 3%);
+            border-color: $blue;;
+
+            &::placeholder {
+                font-size: 0;
+            }
+        }
+    }
+
+    &__btn {
+        width: 37%;
+        height: 65px;
+        color: $white;
+        background-color: $blue;
+
+        margin-left: 1.1rem;
+    }
+}
+

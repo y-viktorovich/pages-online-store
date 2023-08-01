@@ -63,7 +63,7 @@
         color: $blue;
         font-weight: 700;
         line-height: 1.2;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
 
         margin-bottom: 1.4rem;
 
@@ -86,7 +86,7 @@
         font-size: 1.9rem;
         color: $gray;
         line-height: 1.8;
-        letter-spacing: -1px;
+        letter-spacing: -0.01em;
 
         margin-bottom: 2.7rem;
 
@@ -108,7 +108,7 @@
         font-size: 1.8rem;
         color: $blue;
         line-height: 1.25;
-        letter-spacing: 1px;
+        letter-spacing: 0.02em;
 
         &:hover {
             text-decoration: none;
