@@ -1656,6 +1656,115 @@ body {
   letter-spacing: -0.01em;
 }
 
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -2.4rem;
+}
+.card__item {
+  width: 33.3333%;
+  padding: 0 2.4rem;
+  margin-bottom: 7rem;
+}
+.card__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin-bottom: 2rem;
+  position: relative;
+  background-color: #F5F8FC;
+}
+.card__photo--audio::after {
+  content: url("../images/svg/audio.svg");
+  display: block;
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  z-index: 1;
+}
+.card__photo--record::after {
+  content: url("../images/icon/record.png");
+  display: block;
+  width: 95px;
+  height: 91px;
+  position: absolute;
+  right: 19px;
+  bottom: 25px;
+  z-index: 1;
+}
+.card__photo-item {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: 400px;
+  box-shadow: 0 35px 25px rgba(4, 11, 20, 0.1);
+}
+.card__photo-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+}
+.card__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 3.2rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.card__price {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  color: #FFCA42;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+}
+.card__content {
+  margin-bottom: 2.4rem;
+}
+.card__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+}
+.card__status {
+  font-family: "Cardo", sans-serif;
+  font-size: 2.4rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding-left: 2.9rem;
+  margin-bottom: 2.5rem;
+}
+.card__status::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  background-color: #FFCA42;
+  border-radius: 50%;
+  background-color: #FFCA42;
+}
+
 /* Helpers
 =============================*/
 .img {

@@ -56,7 +56,7 @@ function serve() {
     browserSync.init({
         server: {
             baseDir: "./" + distPath,
-            index: 'about.html'
+            index: 'store.html'
         }
     });
 }
