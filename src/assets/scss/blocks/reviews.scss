@@ -4,27 +4,14 @@
     align-items: center;
 
     &__content {
-        width: 40.7%;
+        width: 41%;
         padding-right: 11.1rem;
     }
 
     &__title {
-        font-family: 'Cardo', sans-serif;
-        font-size: 4.5rem;
-        color: $blue;
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
-
         max-width: 326px;
 
         &::after {
-            content: '';
-            display: block;
-            width: 55px;
-            height: 3px;
-
-            background-color: $yellow;
             margin: 2.7rem 0 2.9rem;
         }
     }
@@ -48,7 +35,7 @@
     }
 
     &__cards {
-        width: 59.3%;
+        width: 59%;
         display: flex;
         justify-content: center;
         align-items: center;

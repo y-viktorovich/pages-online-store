@@ -16,21 +16,10 @@
     }
 
     &__title {
-        font-family: 'Cardo', sans-serif;
-        font-size: 4.5rem;
-        color: $white;
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
+       color: $white;
 
         &::after {
-            content: '';
-            display: block;
-            width: 55px;
-            height: 3px;
-
-            background-color: $yellow;
-            margin: 2.2rem 0;
+            margin: 2.2rem 0 2.2rem;
         }
     }
 

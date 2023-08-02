@@ -19,9 +19,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
 
         margin-right: 3.3rem;
+
+        &--footer {
+            margin-bottom: 2.7rem;
+        }
     }
 
     &__logo-link {

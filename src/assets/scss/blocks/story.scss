@@ -1,0 +1,52 @@
+.story {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -5rem;
+
+    &__info {
+        width: 50%;
+        padding: 0 5rem;
+
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        &::after {
+            margin: 2.2rem 0 3.4rem;
+        }
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+
+        margin-bottom: 4rem;
+    }
+
+    &__photo {
+        width: 50%;
+        padding: 0 5rem;
+
+        margin-bottom: 3rem;
+    }
+
+    &__photo-item {
+        display: block;
+        max-width: 100%;
+        height: 650px;
+
+        box-shadow: 0 35px 25px rgba($dark, .1)
+    }
+
+    &__photo-item__img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+}

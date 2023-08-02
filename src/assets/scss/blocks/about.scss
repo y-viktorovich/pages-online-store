@@ -1,0 +1,99 @@
+.about {
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__photo {
+        display: block;
+        max-width: 100%;
+        height: 700px;
+
+        margin-bottom: 8rem;
+        box-shadow: 0 35px 25px rgba($dark, .1)
+    }
+
+    &__photo-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__info {
+        width: 39.93%;
+        padding: 4.5rem 6.6rem;
+        margin-bottom: 3rem;
+
+        background-color: $white;
+        border: 2px solid $blue-bold;
+    }
+
+    &__table-row__header {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2.4rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 2.1;
+        letter-spacing: -0.01em;
+
+        padding-right: 4rem;
+    }
+
+    &__table-row__item {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 2.8;
+        letter-spacing: -0.01em;
+    }
+
+    &__table-row__item-link {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+
+        & + .about__table-row__item-link {
+            margin-left: 2.2rem;
+        }
+
+        &:hover {
+            .about__table-row__item-link__icon {
+                fill: $yellow;
+            }
+        }
+    }
+
+    &__table-row__item-link__icon {
+        width: 100%;
+        height: 100%;
+
+        fill: $blue;
+
+        transition: fill .2s linear;
+    }
+
+    &__contact {
+        width: 60.07%;
+        padding: 0 6.6rem 0 10.8rem;
+    }
+
+    &__contact-title {
+        &::after {
+            margin: 2.2rem 0 2.7rem;
+        }
+    }
+
+    &__contact-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+
+        margin-bottom: 3.4rem;
+    }
+
+}

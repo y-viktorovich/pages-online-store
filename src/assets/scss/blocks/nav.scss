@@ -33,6 +33,26 @@
                 fill: $white;
             }
         }
+
+        &--footer {
+            width: 55px;
+            height: 55px;
+
+            border: 1px solid $yellow;
+
+            background-color: transparent;
+
+            .nav__social-link__icon {
+                fill: $white;
+            }
+
+            &:hover {
+                background-color: $yellow;
+                .nav__social-link__icon {
+                    fill: $blue;
+                }
+            }
+        }
     }
 
     &__social-link__icon {

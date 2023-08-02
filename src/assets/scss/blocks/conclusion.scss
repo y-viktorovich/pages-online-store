@@ -8,7 +8,7 @@
         width: 57.69%;
 
         margin: 0 -1.5rem;
-        padding-right: 13.7rem;
+        padding-right: 11.7rem;
 
         margin-bottom: 3rem;
     }
@@ -66,7 +66,7 @@
         height: 650px;
 
         transform: translate3d(-4rem, -4rem, 0);
-        box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 35px 25px rgba($dark, .04)
     }
 
     &__photo-item__img {

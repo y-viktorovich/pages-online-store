@@ -1,0 +1,64 @@
+.awards {
+
+    padding-left: 4.5rem;
+    background-image: linear-gradient(to bottom, $white 50%, $white 50%, $black 50%, $black);
+
+    background-size: 1px 12px;
+    background-repeat: repeat-y;
+    background-position: 75px;
+
+    &__item {
+        display: flex;
+        margin-bottom: 3.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+
+            .awards__count {
+                background-color: $white;
+            }
+        }
+    }
+
+    &__count-item {
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        width: 65px;
+        height: 65px;
+        background-color: $yellow;
+
+        font-family: 'Cardo', sans-serif;
+        font-size: 3rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.75;
+        letter-spacing: -0.01em;
+    }
+
+    &__content {
+        padding-left: 4.9rem;
+
+        
+    }
+
+    &__title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2.4rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+    }
+}
+

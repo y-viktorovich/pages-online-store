@@ -1,6 +1,6 @@
 .btn {
     display: inline-block;
-    padding: 0.68em 1.73em;
+    padding: 1.05em 2.78em;
     text-decoration: none;
     vertical-align: middle;
 
@@ -9,6 +9,7 @@
     color: $blue;
     font-weight: 700;
     line-height: 1.25;
+    text-align: center;
     letter-spacing: 0.02em;
 
     background-color: $yellow;
@@ -23,10 +24,22 @@
 
     &--transparent {
         background-color: transparent;
-        padding: 1.05em 2.78em;
     }
 
     &--big {
-        padding: 1.05em 5.36em;
+        min-width: 434px;
+    }
+
+    &--medium {
+        min-width: 220px;
+    }
+
+    &--large {
+        min-width: 240px;
+    }
+
+    &--sm {
+        min-width: 180px;
+        padding: 0.68em 1.73em;
     }
 }

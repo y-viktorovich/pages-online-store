@@ -15,7 +15,7 @@
         height: 650px;
 
         transform: translate3d(-4rem, -4rem, 0);
-        box-shadow: 10px 20px 30px rgba($black, .20);
+        box-shadow: 0 35px 25px rgba($dark, .04)
     }
 
     &__photo-item__img {
@@ -113,7 +113,6 @@
         line-height: 1.8;
         text-decoration: none;
         letter-spacing: -0.01em;
-
 
         margin-bottom: .2rem;
 
