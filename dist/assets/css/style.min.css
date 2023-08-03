@@ -2001,6 +2001,151 @@ body {
   letter-spacing: -0.01em;
 }
 
+.modal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.5rem;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(27, 55, 100, 0.8);
+}
+.modal__inner {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+.modal__close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 55px;
+  right: 55px;
+  z-index: 1;
+  transition: transform 0.2s linear;
+}
+.modal__close:hover {
+  transform: rotateZ(-90deg);
+}
+.modal__close-item {
+  background-color: #1B3764;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  display: block;
+  position: relative;
+  transform: rotate(45deg);
+}
+.modal__close-item:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.cart__header {
+  margin-bottom: 6.2rem;
+  background-color: #FFCA42;
+  padding: 3.5rem 7.6rem;
+}
+.cart__content {
+  padding: 0 7.7rem 6.5rem;
+  border-bottom: 1px solid rgba(27, 55, 100, 0.2);
+  min-height: 250px;
+}
+.cart__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 5rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.cart__product {
+  display: flex;
+}
+.cart__product-photo {
+  display: block;
+  width: 133px;
+  height: 178px;
+}
+.cart__product-photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.cart__product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3.8rem;
+}
+.cart__product-info__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 2.4rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 2.2;
+  letter-spacing: -0.01em;
+}
+.cart__product-info__price {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  color: #969AA0;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  margin-bottom: 4.4rem;
+}
+.cart__product-info__btn {
+  font-family: "Cardo", sans-serif;
+  font-size: 3.5rem;
+  color: #1B3764;
+  line-height: 1.5;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.cart__footer {
+  margin-top: auto;
+  padding: 2.5rem 7.1rem 6.5rem;
+}
+.cart__footer-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6.1rem;
+}
+.cart__footer-price__text {
+  font-family: "Cardo", sans-serif;
+  font-size: 2.4rem;
+  color: #1B3764;
+  line-height: 2.2;
+  letter-spacing: -0.01em;
+}
+
 /* Helpers
 =============================*/
 .img {
@@ -2031,4 +2176,8 @@ body {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.full-width {
+  width: 100%;
 }

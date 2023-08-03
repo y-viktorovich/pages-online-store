@@ -128,12 +128,13 @@ title: Product
                             the Internet tend to repeat predefined chunks as necessary.
                         </div>
                     </div>
-                </div>
-            </div>
+                </div><!-- /.product__description-content -->
+            </div><!-- /.product__description -->
         </div><!-- /.product -->
     </div><!-- /.container -->
 </section>
 
+<!-- Details -->
 <div class="details">
     <div class="container">
         <div class="details__inner">
@@ -169,8 +170,53 @@ title: Product
                     There are many variations of passages of alteration in some form.
                 </div>
             </div>
-                
-        </div>
-    </div>
-</div>
+        </div><!-- /.container__inner -->
+    </div><!-- /.container -->
+</div><!-- /.details -->
 
+<!-- Modal -->
+<div class="modal">
+    <div class="modal__inner">
+        <button class="modal__close" type="button">
+            <span class="modal__close-item">close</span>
+        </button>
+
+        <div class="cart">
+            <div class="cart__header">
+                <div class="cart__title">Your Cart</div>
+            </div>
+
+            <div class="cart__content">
+                <div class="cart__product">
+                    <picture class="cart__product-photo">
+                        <source class="cart__product-photo__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
+                        <img class="cart__product-photo__img" src="assets/images/books/atomic-ones.jpg" alt="book">
+                    </picture>
+
+                    <div class="cart__product-info">
+                        <div>
+                            <div class="cart__product-info__title">Atomic One’s</div>
+                            <div class="cart__product-info__price">$30.00 USD</div>
+                            <button class="cart__product-info__btn" type="button">Remove</button>
+                        </div>
+
+                        <div class="product__count">
+                            <button class="product__count-btn product__count-btn__minus" type="button">-</button>
+                            <input class="product__count-number" value="1" min="1" type="number" name="counter" autocomplete="off">
+                            <button class="product__count-btn product__count-btn__plus" type="button">+</button>
+                        </div>
+                    </div>
+                </div><!-- /.cart__product -->
+            </div><!-- /.cart__content -->
+
+            <div class="cart__footer">
+                <div class="cart__footer-price">
+                    <div class="cart__footer-price__text">Sub-Total</div>
+                    <div class="cart__footer-price__count">$ 60.00 USD</div>
+                </div>
+
+                <button class="btn full-width">Continue to Checkout</button>
+            </div>
+        </div><!-- /.cart -->
+    </div><!-- /.cart__content -->
+</div><!-- /.modal -->
