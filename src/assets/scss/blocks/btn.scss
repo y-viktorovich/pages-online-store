@@ -26,8 +26,24 @@
         background-color: transparent;
     }
 
+    &--blue {
+        background-color: $blue-airy;
+        color: $blue;
+
+        border-color: $blue-sky;
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
     &--big {
         min-width: 434px;
+    }
+
+    &--xl {
+        min-width: 315px;
     }
 
     &--medium {

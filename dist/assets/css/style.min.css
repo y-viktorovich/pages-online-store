@@ -554,8 +554,20 @@ body {
 .btn--transparent {
   background-color: transparent;
 }
+.btn--blue {
+  background-color: #F5F8FC;
+  color: #1B3764;
+  border-color: #E8ECF2;
+}
+.btn--blue:hover {
+  background-color: #1B3764;
+  color: #fff;
+}
 .btn--big {
   min-width: 434px;
+}
+.btn--xl {
+  min-width: 315px;
 }
 .btn--medium {
   min-width: 220px;
@@ -1765,6 +1777,230 @@ body {
   background-color: #FFCA42;
 }
 
+.product__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 9rem;
+}
+.product__photo {
+  width: 44.61%;
+  padding: 7.1rem 10rem;
+  margin-bottom: 3rem;
+  max-height: 650px;
+  background-color: #F5F8FC;
+}
+.product__photo-item {
+  display: block;
+  max-width: 380px;
+  height: 509px;
+  box-shadow: 0 35px 25px rgba(4, 11, 20, 0.1);
+}
+.product__photo-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.product__content {
+  display: flex;
+  flex-direction: column;
+  width: 55.39%;
+  padding: 2.3rem 0 2.3rem 8.6rem;
+  margin-bottom: 3rem;
+}
+.product__header {
+  margin-bottom: 2.6rem;
+}
+.product__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 3.2rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+}
+.product__price {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #FFCA42;
+  font-weight: 800;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+.product__main {
+  margin-bottom: 3.4rem;
+}
+.product__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  margin-bottom: 2rem;
+}
+.product__item {
+  display: flex;
+}
+.product__table-row__header {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 2.5;
+  letter-spacing: -0.01em;
+  width: 25%;
+  padding-right: 1rem;
+  position: relative;
+}
+.product__table-row__header::after {
+  content: ":";
+  color: #969AA0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.product__table-row__item {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 2.5;
+  letter-spacing: -0.01em;
+  padding-left: 3.3rem;
+}
+.product__footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 507.5px;
+  margin-top: auto;
+}
+.product__footer .btn {
+  width: 74.38%;
+}
+.product__count {
+  display: flex;
+  width: 23.64%;
+  height: 65px;
+  border: 1px solid rgba(255, 202, 66, 0.7);
+}
+.product__count-btn {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  border: none;
+  background-color: rgba(255, 202, 66, 0.7);
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  color: #1B3764;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.product__count-btn:hover, .product__count-btn:focus {
+  background-color: #1B3764;
+  color: #fff;
+}
+.product__count-number {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  color: #969AA0;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+}
+.product__count-number::-webkit-outer-spin-button, .product__count-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product__description-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+.product__description-header .btn + .btn {
+  margin-left: 5rem;
+}
+.product__description-header .btn {
+  margin-bottom: 3rem;
+}
+.product__description-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4.6rem;
+}
+.product__description-content__item {
+  width: 50%;
+  padding: 0 4.6rem;
+  margin-bottom: 3rem;
+}
+.product__description-content__item-title {
+  font-family: "Cardo", sans-serif;
+  font-size: 3.2rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.1rem;
+}
+.product__description-content__item-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+}
+
+.details {
+  padding: 8.5rem 0 5.5rem;
+  background-color: #FFCA42;
+}
+.details__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4.5rem;
+}
+.details__item {
+  width: 33.33333%;
+  text-align: center;
+  padding: 0 4.5rem;
+  margin-bottom: 3rem;
+}
+.details__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.9rem;
+  background-color: #1B3764;
+}
+.details__img-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+.details__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 3.2rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+.details__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #1B3764;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+}
+
 /* Helpers
 =============================*/
 .img {
@@ -1791,4 +2027,8 @@ body {
 
 .flex-column {
   flex-direction: column;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }

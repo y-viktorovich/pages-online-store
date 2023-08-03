@@ -1,0 +1,228 @@
+.product {
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-bottom: 9rem;
+    }
+    
+    &__photo {
+        width: 44.61%;
+        padding: 7.1rem 10rem;
+        margin-bottom: 3rem;
+        max-height: 650px;
+
+        background-color: $blue-airy;
+    }
+
+    &__photo-item {
+        display: block;
+        max-width: 380px;
+        height: 509px;
+
+        box-shadow: 0 35px 25px rgba($dark, .1);
+    }
+
+    &__photo-item__img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 55.39%;
+        padding: 2.3rem 0 2.3rem 8.6rem;
+        margin-bottom: 3rem;
+    }
+
+    &__header {
+        margin-bottom: 2.6rem;
+    }
+
+    &__title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 3.2rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+
+        margin-bottom: 0.6rem;
+    }
+
+    &__price {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $yellow;
+        font-weight: 800;
+        line-height: 1.7;
+        letter-spacing: -0.01em;
+    }
+
+    &__main {
+        margin-bottom: 3.4rem;
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__table-row__header {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 2.5;
+        letter-spacing: -0.01em;
+
+        width: 25%;
+        padding-right: 1rem;
+
+        position: relative;
+
+        &::after {
+            content: ':';
+            color: $gray;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+
+    &__table-row__item {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 2.5;
+        letter-spacing: -0.01em;
+
+        padding-left: 3.3rem;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 507.5px;
+        margin-top: auto;
+
+        .btn {
+            width: 74.38%;
+        }
+    }
+
+    &__count {
+        display: flex;
+        width: 23.64%;
+        height: 65px;
+        border: 1px solid rgba($yellow, .7);
+    }
+
+    &__count-btn {
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+
+        border: none;
+        background-color: rgba($yellow, .7);
+        cursor: pointer;
+
+        font-family: 'Inter', sans-serif;
+        color: $blue;
+        font-weight: 700;
+        text-align: center;
+
+        transition: background-color .2s linear, color .2s linear;
+
+        &:hover,
+        &:focus {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+    &__count-number {
+        font-family: 'Inter', sans-serif;
+        font-size: 2rem;
+        color: $gray;
+        font-weight: 500;
+
+        width: 100%;
+        height: 100%;
+        border: none;
+
+        text-align: center;
+
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &__description-header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+
+        margin-bottom: 1.8rem;
+
+        .btn + .btn {
+            margin-left: 5rem;
+        }
+
+        .btn {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__description-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 0 -4.6rem;
+
+    }
+
+    &__description-content__item {
+        width: 50%;
+        padding: 0 4.6rem;
+        margin-bottom: 3rem;
+    }
+
+    &__description-content__item-title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 3.2rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+
+        margin-bottom: 1.1rem;
+    }
+
+    &__description-content__item-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+    }
+}   

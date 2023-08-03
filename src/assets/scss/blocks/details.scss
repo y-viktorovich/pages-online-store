@@ -1,0 +1,55 @@
+.details {
+    padding: 8.5rem 0 5.5rem;
+    background-color: $yellow;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -4.5rem;
+    }
+
+    &__item {
+        width: 33.33333%;
+        text-align: center;
+
+        padding: 0 4.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.9rem;
+
+        background-color: $blue;
+    }
+
+    &__img-icon {
+        display: block;
+        width: 36px;
+        height: 36px;
+    }
+
+    &__title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 3.2rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $blue;
+        line-height: 1.8;
+        letter-spacing: -0.01em;
+    }
+}

@@ -617,8 +617,23 @@ body {
     background-color: transparent;
 }
 
+.btn--blue {
+    background-color: #F5F8FC;
+    color: #1B3764;
+    border-color: #E8ECF2;
+}
+
+.btn--blue:hover {
+    background-color: #1B3764;
+    color: #fff;
+}
+
 .btn--big {
     min-width: 434px;
+}
+
+.btn--xl {
+    min-width: 315px;
 }
 
 .btn--medium {
@@ -1997,6 +2012,357 @@ body {
     letter-spacing: -0.01em;
 }
 
+.card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -2.4rem;
+}
+
+.card__item {
+    width: 33.3333%;
+    padding: 0 2.4rem;
+    margin-bottom: 7rem;
+}
+
+.card__photo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 2rem;
+    position: relative;
+    background-color: #F5F8FC;
+}
+
+.card__photo--audio::after {
+    content: url("../images/svg/audio.svg");
+    display: block;
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+    z-index: 1;
+}
+
+.card__photo--record::after {
+    content: url("../images/icon/record.png");
+    display: block;
+    width: 95px;
+    height: 91px;
+    position: absolute;
+    right: 19px;
+    bottom: 25px;
+    z-index: 1;
+}
+
+.card__photo-item {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: 400px;
+    box-shadow: 0 35px 25px rgba(4, 11, 20, 0.1);
+}
+
+.card__photo-item__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.card__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.9rem;
+}
+
+.card__title {
+    font-family: "Cardo", sans-serif;
+    font-size: 3.2rem;
+    color: #1B3764;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.card__price {
+    font-family: "Inter", sans-serif;
+    font-size: 2.2rem;
+    color: #FFCA42;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+}
+
+.card__content {
+    margin-bottom: 2.4rem;
+}
+
+.card__text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    color: #969AA0;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+}
+
+.card__status {
+    font-family: "Cardo", sans-serif;
+    font-size: 2.4rem;
+    color: #1B3764;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    position: relative;
+    padding-left: 2.9rem;
+    margin-bottom: 2.5rem;
+}
+
+.card__status::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #FFCA42;
+    border-radius: 50%;
+    background-color: #FFCA42;
+}
+
+.product__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 9rem;
+}
+
+.product__photo {
+    width: 44.61%;
+    padding: 7.1rem 10rem;
+    margin-bottom: 3rem;
+    max-height: 650px;
+    background-color: #F5F8FC;
+}
+
+.product__photo-item {
+    display: block;
+    max-width: 380px;
+    height: 509px;
+    box-shadow: 0 35px 25px rgba(4, 11, 20, 0.1);
+}
+
+.product__photo-item__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.product__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 55.39%;
+    padding: 2.3rem 0 2.3rem 8.6rem;
+    margin-bottom: 3rem;
+}
+
+.product__header {
+    margin-bottom: 2.6rem;
+}
+
+.product__title {
+    font-family: "Cardo", sans-serif;
+    font-size: 3.2rem;
+    color: #1B3764;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.6rem;
+}
+
+.product__price {
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    color: #FFCA42;
+    font-weight: 800;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+}
+
+.product__main {
+    margin-bottom: 3.4rem;
+}
+
+.product__text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    color: #969AA0;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+    margin-bottom: 2rem;
+}
+
+.product__item {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.product__table-row__header {
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    color: #969AA0;
+    line-height: 2.5;
+    letter-spacing: -0.01em;
+    width: 25%;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.product__table-row__header::after {
+    content: ":";
+    color: #969AA0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.product__table-row__item {
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    color: #969AA0;
+    line-height: 2.5;
+    letter-spacing: -0.01em;
+    padding-left: 3.3rem;
+}
+
+.product__footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 507.5px;
+    margin-top: auto;
+}
+
+.product__footer .btn {
+    width: 74.38%;
+}
+
+.product__count {
+    display: -ms-flexbox;
+    display: flex;
+    width: 23.64%;
+    height: 65px;
+    border: 1px solid rgba(255, 202, 66, 0.7);
+}
+
+.product__count-btn {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    border: none;
+    background-color: rgba(255, 202, 66, 0.7);
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    color: #1B3764;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.product__count-btn:hover, .product__count-btn:focus {
+    background-color: #1B3764;
+    color: #fff;
+}
+
+.product__count-number {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    color: #969AA0;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+}
+
+.product__count-number::-webkit-outer-spin-button, .product__count-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product__description-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product__description-header .btn + .btn {
+    margin-left: 5rem;
+}
+
+.product__description-header .btn {
+    margin-bottom: 3rem;
+}
+
+.product__description-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 4.6rem;
+}
+
+.product__description-content__item {
+    width: 50%;
+    padding: 0 4.6rem;
+    margin-bottom: 3rem;
+}
+
+.product__description-content__item-title {
+    font-family: "Cardo", sans-serif;
+    font-size: 3.2rem;
+    color: #1B3764;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.1rem;
+}
+
+.product__description-content__item-text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    color: #969AA0;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+}
+
 /* Helpers
 =============================*/
 .img {
@@ -2024,4 +2390,8 @@ body {
 .flex-column {
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
