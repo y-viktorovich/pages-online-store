@@ -2387,6 +2387,93 @@ body {
   margin-bottom: 2rem;
 }
 
+.blog__photo-item {
+  display: block;
+  max-width: 100%;
+  height: 700px;
+  margin-bottom: 1.5rem;
+}
+.blog__photo-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  box-shadow: 0 35px 25px rgba(4, 11, 20, 0.1);
+}
+.blog__date {
+  font-family: "Cardo", sans-serif;
+  font-size: 2.4rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 2.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 2.6rem;
+}
+.blog__content {
+  margin-bottom: 4.4rem;
+}
+.blog__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 3rem;
+  color: #1B3764;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.1rem;
+}
+.blog__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #969AA0;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+.blog__list {
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  color: #1B3764;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  margin-top: 2.2rem;
+  padding-left: 8rem;
+}
+.blog__list--decimal {
+  list-style: decimal;
+}
+.blog__list-item {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.blog__list-item--circle::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  background-color: #FFCA42;
+  border-radius: 50%;
+  left: -33px;
+}
+.blog__quote {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  padding: 5.3rem 8.4rem;
+  background-color: #1B3764;
+  border-radius: 5px;
+  background-image: url("../images/svg/quote.svg");
+  background-repeat: no-repeat;
+  background-position: 25px top;
+}
+
 /* Helpers
 =============================*/
 .img {

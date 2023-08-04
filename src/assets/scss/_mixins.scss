@@ -7,3 +7,23 @@
     -webkit-box-orient: vertical;
     box-orient: vertical;
 }
+
+@mixin circle {
+    &::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+
+        transform: translateY(-50%);
+
+        background-color: $yellow;
+        border-radius: 50%;
+        @content;
+    }
+}
