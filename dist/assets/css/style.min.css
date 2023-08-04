@@ -1254,6 +1254,7 @@ body {
 
 .articles {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -1.75rem;
 }
 .articles__col {
