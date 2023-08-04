@@ -34,12 +34,12 @@
 
         .form__group {
             width: 63%;
-            flex-wrap: wrap;
         }
     }
 
     &__form-request {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }
 
@@ -65,7 +65,7 @@
 
         &:focus {
             background-color: darken($white, 3%);
-            border-color: $blue;;
+            border-color: $blue;
 
             &::placeholder {
                 font-size: 0;

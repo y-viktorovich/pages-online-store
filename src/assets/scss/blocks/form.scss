@@ -1,5 +1,12 @@
-// .form {
-//     &__group {
-//         width: 100%;
-//     }
-// }
+.form {
+
+    &__group {
+        margin-bottom: 1.5rem;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        padding: 1.3rem 0 4rem;
+    }
+}
