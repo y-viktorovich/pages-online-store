@@ -1,0 +1,14 @@
+.question {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -4.1rem;
+
+    &__item {
+        width: 50%;
+        padding: 0 4.1rem;
+        margin-bottom: 3rem;
+
+        
+    }
+}
