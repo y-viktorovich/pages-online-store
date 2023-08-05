@@ -1,0 +1,66 @@
+.licenses {
+
+    padding: 13rem 0 5.5rem;
+
+    &__inner {
+        width: 100%;
+        max-width: 790px;
+    }
+
+    &__content {
+        margin-bottom: 6.5rem;
+    }
+
+    &__title {
+        font-family: 'Cardo', sans-serif;
+        font-size: 3rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+
+        margin-bottom: 1.3rem;
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        color: $gray;
+        line-height: 1.7;   
+        letter-spacing: -0.01em;
+
+        p {
+            padding-bottom: 1rem;
+        }
+
+        b {
+            font-weight: 700;
+            color: $blue;
+        }
+    }
+
+    &__content-header {
+        font-family: 'Cardo', sans-serif;
+        font-size: 2rem;
+        color: $blue;
+        line-height: 1.7;
+        letter-spacing: -0.01em;
+    }
+
+    &__content-list {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    &__content-list__item {
+        & + .licenses__content-list__item {
+            margin-left: .8rem;
+        }
+
+        &:last-child {
+            span {
+                display: none;
+            }
+        }
+    }
+}

@@ -40,7 +40,6 @@
     &__form-request {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
     }
 
     &__input {
@@ -74,7 +73,7 @@
     }
 
     &__btn {
-        width: 37%;
+        width: 35.5%;
         height: 65px;
         color: $white;
         background-color: $blue;

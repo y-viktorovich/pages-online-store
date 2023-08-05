@@ -1,0 +1,35 @@
+.changelog {
+    padding: 20rem 0;
+
+    &__inner {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+
+        padding: 5.3rem 8.9rem;
+        background-color: $gray-light;
+
+        text-align: center;
+    }
+
+    &__title {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Cardo', sans-serif;
+        font-size: 3rem;
+        color: $blue;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.015em;
+
+
+        background-color: $yellow;
+        border-radius: 50%;
+    }
+}

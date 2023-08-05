@@ -12,6 +12,8 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+
+        margin-bottom: 2.3rem;
     }
 
     &__nav {
@@ -93,5 +95,29 @@
         padding-bottom: 1.5rem;
     }
 
+    &__copy {
+        padding: 1.8rem 0 2.3rem;
+        border-top: 1px solid rgba($white, .2);
 
+        font-family: 'Inter', sans-serif;
+        font-size: 1.7rem;
+        color: $blue-light;
+        line-height: 2;
+        text-align: center;
+        letter-spacing: -0.01em;
+    }
+
+    &__copy-icon {
+        font-family: 'Cardo', sans-serif;
+        font-size: 1.9rem;
+        color: $blue-light;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: .02em;
+    }
+
+    &__copy-text {
+        color: $white;
+        font-weight: 500;
+    }
 }
