@@ -67,8 +67,14 @@
     
                         <a class="btn btn--sm" href="#">Order Today</a>
                     </div>
-    
                 </div><!-- /.nav -->
+    
+                <button class="burger">
+                    <span class="burger__line">menu</span>
+                    <span class="burger__line">menu</span>
+                    <span class="burger__line">menu</span>
+                    <span class="burger__line">menu</span>
+                </button>
             </div><!-- /.header__inner -->
         </div><!-- /.container -->
     </header>
@@ -247,15 +253,15 @@
     <!-- Modal -->
     <div class="modal">
         <div class="modal__inner">
-            <button class="modal__close" type="button">
-                <span class="modal__close-item">close</span>
-            </button>
+            <div class="modal__header">
+                <div class="modal__title">Your Cart</div>
+    
+                <button class="modal__close" type="button">
+                    <span class="modal__close-item">close</span>
+                </button>
+            </div>
     
             <div class="cart">
-                <div class="cart__header">
-                    <div class="cart__title">Your Cart</div>
-                </div>
-    
                 <div class="cart__content">
                     <div class="cart__product">
                         <picture class="cart__product-photo">
@@ -264,13 +270,13 @@
                         </picture>
     
                         <div class="cart__product-info">
-                            <div>
+                            <div class="cart__product-info__inner">
                                 <a class="cart__product-info__title" href="">Atomic One’s</a>
                                 <div class="cart__product-info__price">$30.00 USD</div>
                                 <button class="cart__product-info__btn" type="button">Remove</button>
                             </div>
     
-                            <div class="product__count">
+                            <div class="product__count cart__product-info__count">
                                 <button class="product__count-btn product__count-btn__minus" type="button">-</button>
                                 <input class="product__count-number" value="1" min="1" type="number" name="counter" autocomplete="off">
                                 <button class="product__count-btn product__count-btn__plus" type="button">+</button>
@@ -295,42 +301,45 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__block flex-column">
-                    <div class="header__logo header__logo--footer">
-                        <a class="header__logo-link" href="index.html">
-                            <svg class="header__logo-icon">
-                                <use href="assets/images/svg/sprites.svg#logo"></use>
-                            </svg>
-        
-                            <span class="header__logo-name">Pages</span>
-                        </a>
+                <div class="footer__block">
+                    <div class="footer__nav flex-column">
+                        <div class="header__logo header__logo--footer">
+                            <a class="header__logo-link" href="index.html">
+                                <svg class="header__logo-icon">
+                                    <use href="assets/images/svg/sprites.svg#logo"></use>
+                                </svg>
+            
+                                <span class="header__logo-name">Pages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__social">
+                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+    
+                            <a class="nav__social-link  nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#twitter"></use>
+                                </svg>
+                            </a>
+    
+                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#linkedin"></use>
+                                </svg>
+                            </a>
+    
+                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
     
-                    <div class="nav__social">
-                        <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#facebook"></use>
-                            </svg>
-                        </a>
-    
-                        <a class="nav__social-link  nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#twitter"></use>
-                            </svg>
-                        </a>
-    
-                        <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#linkedin"></use>
-                            </svg>
-                        </a>
-    
-                        <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </div>
                 </div><!-- /.footer__block -->
     
                 <div class="footer__block">

@@ -7,12 +7,21 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+
+        @include breakpoint($mobile-large) {
+            text-align: center;
+            justify-content: center;
+        }
     }
 
     &__content {
         width: 43.62%;
         margin-bottom: 2rem;
         max-width: 567px;
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+        }
     }
 
     &__title {
@@ -20,6 +29,14 @@
 
         &::after {
             margin: 2.2rem 0 2.2rem;
+
+            @include breakpoint($mobile-large) {
+                margin: 2.2rem auto 2.2rem;
+            }
+        }
+
+        @include breakpoint($tablet) {
+            font-size: 2.5rem;
         }
     }
 
@@ -30,12 +47,28 @@
         line-height: 1.8;
 
         margin-bottom: 3.1rem;
+
+        @include breakpoint($tablet) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__photo {
+        width: 56.38%;
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+        }
     }
 
     &__photo-item {
         display: block;
-        width: 640px;
+        max-width: 640px;
         height: 427px;
+
+        @include breakpoint($notebook-large) {
+            height: auto;
+        }
     }
 
     &__photo-item__img {
@@ -45,5 +78,9 @@
         object-fit: cover;
         object-position: center;
         transform: translateX(100px);
+
+        @include breakpoint($notebook-large) {
+            transform: translateX(0);
+        }
     }
 }

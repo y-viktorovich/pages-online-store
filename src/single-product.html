@@ -177,15 +177,15 @@ title: Product
 <!-- Modal -->
 <div class="modal">
     <div class="modal__inner">
-        <button class="modal__close" type="button">
-            <span class="modal__close-item">close</span>
-        </button>
+        <div class="modal__header">
+            <div class="modal__title">Your Cart</div>
+
+            <button class="modal__close" type="button">
+                <span class="modal__close-item">close</span>
+            </button>
+        </div>
 
         <div class="cart">
-            <div class="cart__header">
-                <div class="cart__title">Your Cart</div>
-            </div>
-
             <div class="cart__content">
                 <div class="cart__product">
                     <picture class="cart__product-photo">
@@ -194,13 +194,13 @@ title: Product
                     </picture>
 
                     <div class="cart__product-info">
-                        <div>
+                        <div class="cart__product-info__inner">
                             <a class="cart__product-info__title" href="">Atomic One’s</a>
                             <div class="cart__product-info__price">$30.00 USD</div>
                             <button class="cart__product-info__btn" type="button">Remove</button>
                         </div>
 
-                        <div class="product__count">
+                        <div class="product__count cart__product-info__count">
                             <button class="product__count-btn product__count-btn__minus" type="button">-</button>
                             <input class="product__count-number" value="1" min="1" type="number" name="counter" autocomplete="off">
                             <button class="product__count-btn product__count-btn__plus" type="button">+</button>

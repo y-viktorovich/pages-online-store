@@ -67,8 +67,14 @@
     
                         <a class="btn btn--sm" href="#">Order Today</a>
                     </div>
-    
                 </div><!-- /.nav -->
+    
+                <button class="burger">
+                    <span class="burger__line">menu</span>
+                    <span class="burger__line">menu</span>
+                    <span class="burger__line">menu</span>
+                    <span class="burger__line">menu</span>
+                </button>
             </div><!-- /.header__inner -->
         </div><!-- /.container -->
     </header>
@@ -97,8 +103,8 @@
                             <th class="statistic__header-item">Ratings</th>
                         </thead>
     
-                        <tbody class="statistic-content">
-                            <tr class="statistic-row">
+                        <tbody class="statistic__content">
+                            <tr class="statistic__row">
                                 <td class="statistic__item">586pages</td>
                                 <td class="statistic__item">10 Hours</td>
                                 <td class="statistic__item">4.5/5 (305 ratings)</td>
@@ -126,16 +132,16 @@
     
             <div class="assortment">
                 <div class="assortment__item">
-                    <div class="assortment__photo">
+                    <a class="assortment__photo" href="#">
                         <picture class="assortment__photo-item">
                             <source class="assortment__photo-item__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
                             <img class="assortment__photo-item__img" src="assets/images/books/atomic-ones.jpg" alt="book">
                         </picture>
-                    </div>
+                    </a>
     
                     <div class="assortment__content">
                         <div class="assortment__header">
-                            <div class="assortment__title">Atomic One’s</div>
+                            <a class="assortment__title" href="#">Atomic One’s</a>
                         </div>
     
                         <div class="assortment__main">
@@ -151,8 +157,8 @@
                                     <th class="statistic__header-item">Length:</th>
                                 </thead>
             
-                                <tbody class="statistic-content">
-                                    <tr class="statistic-row">
+                                <tbody class="statistic__content">
+                                    <tr class="statistic__row">
                                         <td class="statistic__item">586pages</td>
                                         <td class="statistic__item">10 Hours</td>
                                     </tr>
@@ -165,16 +171,16 @@
                 </div><!-- /.assortment__item -->
     
                 <div class="assortment__item">
-                    <div class="assortment__photo">
+                    <a class="assortment__photo" href="#">
                         <picture class="assortment__photo-item">
                             <source class="assortment__photo-item__img" srcset="assets/images/books/the-dark-light.webp" type="image/webp">
                             <img class="assortment__photo-item__img" src="assets/images/books/the-dark-light.jpg" alt="book">
                         </picture>
-                    </div>
+                    </a>
     
                     <div class="assortment__content">
                         <div class="assortment__header">
-                            <div class="assortment__title">Atomic One’s</div>
+                            <a class="assortment__title" href="#">The Dark Light</a>
                         </div>
     
                         <div class="assortment__main">
@@ -190,8 +196,8 @@
                                     <th class="statistic__header-item">Length:</th>
                                 </thead>
             
-                                <tbody class="statistic-content">
-                                    <tr class="statistic-row">
+                                <tbody class="statistic__content">
+                                    <tr class="statistic__row">
                                         <td class="statistic__item">586pages</td>
                                         <td class="statistic__item">10 Hours</td>
                                     </tr>
@@ -727,42 +733,45 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__block flex-column">
-                    <div class="header__logo header__logo--footer">
-                        <a class="header__logo-link" href="index.html">
-                            <svg class="header__logo-icon">
-                                <use href="assets/images/svg/sprites.svg#logo"></use>
-                            </svg>
-        
-                            <span class="header__logo-name">Pages</span>
-                        </a>
+                <div class="footer__block">
+                    <div class="footer__nav flex-column">
+                        <div class="header__logo header__logo--footer">
+                            <a class="header__logo-link" href="index.html">
+                                <svg class="header__logo-icon">
+                                    <use href="assets/images/svg/sprites.svg#logo"></use>
+                                </svg>
+            
+                                <span class="header__logo-name">Pages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__social">
+                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+    
+                            <a class="nav__social-link  nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#twitter"></use>
+                                </svg>
+                            </a>
+    
+                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#linkedin"></use>
+                                </svg>
+                            </a>
+    
+                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                <svg class="nav__social-link__icon">
+                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
     
-                    <div class="nav__social">
-                        <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#facebook"></use>
-                            </svg>
-                        </a>
-    
-                        <a class="nav__social-link  nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#twitter"></use>
-                            </svg>
-                        </a>
-    
-                        <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#linkedin"></use>
-                            </svg>
-                        </a>
-    
-                        <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </div>
                 </div><!-- /.footer__block -->
     
                 <div class="footer__block">

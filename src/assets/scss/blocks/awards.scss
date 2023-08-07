@@ -7,6 +7,17 @@
     background-repeat: repeat-y;
     background-position: 75px;
 
+    @include breakpoint($tablet) {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint($mobile) {
+        padding-left: 0;
+        background-position: 33px;
+    }
+
     &__item {
         display: flex;
         margin-bottom: 3.5rem;
@@ -39,7 +50,9 @@
     &__content {
         padding-left: 4.9rem;
 
-        
+        @include breakpoint($mobile) {
+            padding-left: 2.5rem;
+        }
     }
 
     &__title {
@@ -51,6 +64,10 @@
         letter-spacing: -0.01em;
 
         margin-bottom: 1.5rem;
+
+        @include breakpoint($mobile) {
+            font-size: 2rem;
+        }
     }
 
     &__text {
@@ -59,6 +76,10 @@
         color: $gray;
         line-height: 1.8;
         letter-spacing: -0.01em;
+
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
     }
 }
 

@@ -5,6 +5,12 @@
         flex-wrap: wrap;
 
         margin-bottom: 9rem;
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 7rem;
+        }
     }
     
     &__photo {
@@ -14,6 +20,18 @@
         max-height: 650px;
 
         background-color: $blue-airy;
+
+        @include breakpoint($notebook-large) {
+            height: 100%;
+        }
+
+        @include breakpoint($notebook) {
+            padding: 7.1rem 7rem;
+        }
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+        }
     }
 
     &__photo-item {
@@ -22,6 +40,10 @@
         height: 509px;
 
         box-shadow: 0 35px 25px rgba($dark, .1);
+
+        @include breakpoint($notebook-large) {
+            height: auto;
+        }
     }
 
     &__photo-item__img {
@@ -38,6 +60,17 @@
         width: 55.39%;
         padding: 2.3rem 0 2.3rem 8.6rem;
         margin-bottom: 3rem;
+
+        @include breakpoint($tablet) {
+            padding: 2.3rem 0 2.3rem 5.6rem;
+        }
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+            padding: 2.3rem 0 2.3rem;
+
+            text-align: center;
+        }
     }
 
     &__header {
@@ -76,10 +109,16 @@
         letter-spacing: -0.01em;
 
         margin-bottom: 2rem;
+
+        @include breakpoint($tablet) {
+            font-size: 1.6rem;
+        }
     }
 
-    &__item {
-        display: flex;
+    &__table {
+        @include breakpoint($mobile-large) {
+            margin: 0 auto;
+        }
     }
 
     &__table-row__header {
@@ -93,6 +132,11 @@
         padding-right: 1rem;
 
         position: relative;
+
+        @include breakpoint($tablet) {
+            line-height: 1.6;
+            font-size: 1.6rem;
+        }
 
         &::after {
             content: ':';
@@ -112,6 +156,11 @@
         letter-spacing: -0.01em;
 
         padding-left: 3.3rem;
+
+        @include breakpoint($tablet) {
+            line-height: 1.6;
+            font-size: 1.6rem;
+        }
     }
 
     &__footer {
@@ -120,6 +169,11 @@
         width: 100%;
         max-width: 507.5px;
         margin-top: auto;
+
+        @include breakpoint($mobile-large) {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .btn {
             width: 74.38%;
@@ -186,6 +240,10 @@
 
         .btn + .btn {
             margin-left: 5rem;
+
+            @include breakpoint($mobile-large) {
+                margin-left: 0;
+            }
         }
 
         .btn {
@@ -205,6 +263,10 @@
         width: 50%;
         padding: 0 4.6rem;
         margin-bottom: 3rem;
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+        }
     }
 
     &__description-content__item-title {
@@ -216,6 +278,10 @@
         letter-spacing: -0.02em;
 
         margin-bottom: 1.1rem;
+
+        @include breakpoint($tablet) {
+            font-size: 2.5rem;
+        }
     }
 
     &__description-content__item-text {
@@ -224,5 +290,9 @@
         color: $gray;
         line-height: 1.8;
         letter-spacing: -0.01em;
+
+        @include breakpoint($tablet) {
+            font-size: 1.6rem;
+        }
     }
 }   

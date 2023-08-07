@@ -1,11 +1,20 @@
 .secure {
     padding: 20rem 0;
 
+    @include breakpoint($tablet) {
+        padding: 15rem 0;
+    }
+
+    @include breakpoint($mobile-large) {
+        padding: 10rem 0;
+    }
+
     .form__group {
         margin-bottom: 2rem;
     }
 
     &__inner {
+        width: 100%;
         max-width: 922px;
         padding: 12.3rem 15.8rem;
         margin: 0 auto;
@@ -13,6 +22,10 @@
         text-align: center;
 
         background-color: $gray-light;
+
+        @include breakpoint($tablet) {
+            padding: 7.3rem 2rem;
+        }
 
     }
 
@@ -33,6 +46,10 @@
 
         max-width: 551px;
         margin: 0 auto 2rem;
+
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
     }
 
     &__input {

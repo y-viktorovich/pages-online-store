@@ -1,5 +1,9 @@
 .section {
-    padding: 14.5rem 0 11.5rem;
+    padding: 14.5rem 0 8.5rem;
+
+    @include breakpoint($notebook-large) {
+        padding: 8.5rem 0 2.5rem;
+    }
 
     &__header {
         width: 100%;
@@ -24,10 +28,22 @@
             background-color: $yellow;
             margin: 2.2rem auto 5.7rem;
         }
+
+        @include breakpoint($notebook-large) {
+            font-size: 3.5rem;
+        }
+
+        @include breakpoint($mobile) {
+            font-size: 2.9rem;
+        }
     }
 
     .info__title::after {
         margin: 2.2rem 0 2.2rem;
+
+        @include breakpoint($tablet) {
+            margin: 2.2rem auto 2.2rem;
+        }
     }
 
     &--blue {

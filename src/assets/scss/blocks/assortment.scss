@@ -1,23 +1,40 @@
 .assortment {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     margin: 0 -3.3rem;
 
     &__item {
         display: flex;
+        flex-wrap: wrap;
         width: 50%;
         padding: 0 3.3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
+
+        @include breakpoint($notebook-large) {
+            width: 100%;
+            max-width: 400px;
+        }
     }
 
     &__photo {
         width: 48.3%;
+
+        @include breakpoint($notebook-large) {
+            width: 100%;
+        }
     }
 
     &__photo-item {
         display: block;
         max-width: 100%;
         height: 400px;
+        box-shadow: 0 35px 25px rgba($dark, .1);
+
+        @include breakpoint($notebook-large) {
+            height: auto;
+        }
     }
 
     &__photo-item__img {
@@ -33,6 +50,12 @@
         flex-direction: column;
         width: 51.7%;
         padding: 3.35rem 0 3.35rem 4rem;
+
+        @include breakpoint($notebook-large) {
+            width: 100%;
+            text-align: center;
+            padding: 3.35rem 1rem 0 1rem;
+        }
     }
 
     &__header {
@@ -46,6 +69,13 @@
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: -0.02em;
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+
+        }
     }
 
     &__main {
@@ -60,10 +90,20 @@
         letter-spacing: -0.01em;
 
         max-width: 262px;
+
+        @include breakpoint($notebook-large) {
+            max-width: 100%;
+        }
     }
 
     &__footer {
         margin-top: auto;
+
+        @include breakpoint($notebook-large) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
 }

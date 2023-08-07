@@ -40,6 +40,10 @@
 
     &--big {
         min-width: 434px;
+
+        @include breakpoint($notebook) {
+            min-width: auto;
+        }
     }
 
     &--xl {

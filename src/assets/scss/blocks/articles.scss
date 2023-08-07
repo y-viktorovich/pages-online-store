@@ -9,6 +9,10 @@
         padding: 0 1.75rem;
 
         margin-bottom: 6rem;
+
+        @include breakpoint($notebook) {
+            width: 100%;
+        }
     }
 
     &__item {
@@ -16,6 +20,11 @@
         flex-direction: column;
         background-color: $white;
         box-shadow: 0 35px 25px rgba($dark, 0.04);
+
+        @include breakpoint($notebook) {
+            max-width: 510px;
+            margin: 0 auto;
+        }
     }
 
     &__header {
@@ -56,6 +65,10 @@
         flex-direction: column;
         height: 100%;
         padding: 2.7rem 3.2rem 2.7rem 3.1rem;
+
+        @include breakpoint($tablet) {
+            padding: 1.7rem 1.6rem 2.7rem 1.6rem;
+        }
     }
 
     &__content-title {
@@ -71,6 +84,10 @@
         @include hide-text;
         -webkit-line-clamp: 2;
         line-clamp: 2;
+
+        @include breakpoint($notebook) {
+            font-size: 2rem;
+        }
 
         a {
             color: inherit;
@@ -95,6 +112,10 @@
 
         -webkit-line-clamp: 3;
         line-clamp: 3;
+
+        @include breakpoint($notebook) {
+            font-size: 1.6rem;
+        }
     }
 
     &__content-footer {
@@ -120,6 +141,9 @@
         font-family: 'Inter', sans-serif;
         font-size: 1.7rem;
         color: $blue;
+        text-align: right;
         line-height: 1.25;
+
+        padding-left: 1rem;
     }
 }

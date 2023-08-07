@@ -1,12 +1,27 @@
 .info {
     display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($tablet) {
+        text-align: center;
+    }
 
     &__photo {
         width: 43.21%;
 
         border: 12px solid $yellow;
 
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
+
+        @include breakpoint($notebook-large) {
+            display: flex;
+        }
+
+        @include breakpoint($tablet) {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 6rem;
+        }
     }
 
     &__photo-item {
@@ -15,7 +30,12 @@
         height: 650px;
 
         transform: translate3d(-4rem, -4rem, 0);
-        box-shadow: 0 35px 25px rgba($dark, .04)
+        box-shadow: 0 35px 25px rgba($dark, .04);
+
+        @include breakpoint($notebook-large) {
+            height: auto;
+            transform: translate3d(-2rem, -2rem, 0);
+        }
     }
 
     &__photo-item__img {
@@ -31,7 +51,20 @@
         width: 56.79%;
         padding: 2rem 0 0 14.2rem;
 
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
+
+        @include breakpoint($notebook-large) {
+            padding: 2rem 0 0 8.2rem;
+        }
+
+        @include breakpoint($notebook-large) {
+            min-width: auto;
+        }
+
+        @include breakpoint($tablet) {
+            width: 100%;
+            padding: 2rem 2rem;
+        }
     }
 
     &__text {
@@ -43,20 +76,42 @@
 
         min-width: 605px;
         margin-bottom: 4.4rem;
+
+        @include breakpoint($notebook-large) {
+            min-width: auto;
+        }
     }
 
     &__statistic {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -3.6rem 4.1rem;
+        margin: 0 -3.6rem 2.1rem;
+
+        @include breakpoint($tablet) {
+            justify-content: center;
+        }
+
+        @include breakpoint($mobile) {
+            flex-direction: column;
+        }
     }
 
     &__statistic-item {
         padding: 0 3.6rem;
+        margin-bottom: 2rem;
 
         border-right: 1px solid $yellow;
 
         &:last-child {
+            border-right: 0;
+        }
+
+        @include breakpoint($mobile-large) {
+            padding: 0 2.6rem;
+        }
+
+        @include breakpoint($mobile) {
+            padding: 0 1.6rem;
             border-right: 0;
         }
     }
@@ -83,15 +138,27 @@
         padding: 1.5rem 1.8rem;
 
         background-color: $blue;
+
+        @include breakpoint($mobile) {
+            flex-direction: column;
+        }
     }
 
     &__address-qrcode-img {
         width: 130px;
         height: 130px;
+
+        @include breakpoint($mobile) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__address-content {
         padding-left: 3.7rem;
+
+        @include breakpoint($mobile) {
+            padding-left: 0;
+        }
     }
 
     &__address-content__name {

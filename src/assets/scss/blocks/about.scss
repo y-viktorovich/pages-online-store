@@ -11,7 +11,11 @@
         height: 700px;
 
         margin-bottom: 8rem;
-        box-shadow: 0 35px 25px rgba($dark, .1)
+        box-shadow: 0 35px 25px rgba($dark, .1);
+
+        @include breakpoint($notebook) {
+            height: auto;
+        }
     }
 
     &__photo-img {
@@ -25,10 +29,34 @@
     &__info {
         width: 39.93%;
         padding: 4.5rem 6.6rem;
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
 
         background-color: $white;
         border: 2px solid $blue-bold;
+
+        @include breakpoint($notebook) {
+            width: 50%;
+            height: 100%;
+            padding: 2.5rem 3.6rem;
+        }
+
+        @include breakpoint($tablet) {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 6rem;
+
+            text-align: center;
+        }
+
+        @include breakpoint($mobile) {
+            padding: 2.5rem 1.6rem;
+        }
+    }
+
+    &__table {
+        @include breakpoint($tablet) {
+            margin: 0 auto;
+        }
     }
 
     &__table-row__header {
@@ -40,6 +68,10 @@
         letter-spacing: -0.01em;
 
         padding-right: 4rem;
+
+        @include breakpoint($mobile) {
+            font-size: 1.8rem;
+        }
     }
 
     &__table-row__item {
@@ -48,6 +80,10 @@
         color: $gray;
         line-height: 2.8;
         letter-spacing: -0.01em;
+
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
     }
 
     &__table-row__item-link {
@@ -78,11 +114,32 @@
     &__contact {
         width: 60.07%;
         padding: 0 6.6rem 0 10.8rem;
+        margin-bottom: 6rem;
+
+        @include breakpoint($notebook) {
+            width: 50%;
+            padding: 0 3.6rem 0 6.8rem;
+        }
+
+        @include breakpoint($tablet) {
+            width: 100%;
+            text-align: center;
+            padding: 0 2rem;
+        }
     }
 
     &__contact-title {
+
+        @include breakpoint($mobile) {
+            font-size: 2.5rem;
+        }
+
         &::after {
             margin: 2.2rem 0 2.7rem;
+
+            @include breakpoint($tablet) {
+                margin: 2.2rem auto 2.7rem;
+            }
         }
     }
 
@@ -94,6 +151,9 @@
         letter-spacing: -0.01em;
 
         margin-bottom: 3.4rem;
-    }
 
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
+    }
 }

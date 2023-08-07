@@ -2,13 +2,17 @@
 
     padding: 13rem 0 5.5rem;
 
+    @include breakpoint($mobile-large) {
+        padding: 8rem 0 2.5rem;
+    }
+
     &__inner {
         width: 100%;
         max-width: 790px;
     }
 
     &__content {
-        margin-bottom: 6.5rem;
+        margin-bottom: 5.5rem;
     }
 
     &__title {
@@ -20,14 +24,23 @@
         letter-spacing: -0.01em;
 
         margin-bottom: 1.3rem;
+
+        @include breakpoint($mobile-large) {
+            font-size: 2.5rem;
+        }
     }
 
-    &__text {
+    &__text,
+    &__content-text {
         font-family: 'Inter', sans-serif;
         font-size: 1.9rem;
         color: $gray;
         line-height: 1.7;   
         letter-spacing: -0.01em;
+
+        @include breakpoint($mobile-large) {
+            font-size: 1.6rem;
+        }
 
         p {
             padding-bottom: 1rem;
@@ -47,20 +60,7 @@
         letter-spacing: -0.01em;
     }
 
-    &__content-list {
-        display: flex;
+    &__content-text {
         margin-bottom: 1rem;
-    }
-
-    &__content-list__item {
-        & + .licenses__content-list__item {
-            margin-left: .8rem;
-        }
-
-        &:last-child {
-            span {
-                display: none;
-            }
-        }
     }
 }

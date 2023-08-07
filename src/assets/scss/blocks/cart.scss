@@ -3,30 +3,26 @@
     flex-direction: column;
     background-color: $white;
 
-
-    &__header {
-        margin-bottom: 6.2rem;
-        background-color: $yellow;
-        padding: 3.5rem 7.6rem;
-    }
-
     &__content {
-        padding: 0 7.7rem 6.5rem;
+        padding: 6.2rem 7.7rem 6.5rem;
         border-bottom: 1px solid rgba($blue, .2);
         min-height: 250px;
-    }
 
-    &__title {
-        font-family: 'Cardo', sans-serif;
-        font-size: 5rem;
-        color: $blue;
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: -0.02em;
+        @include breakpoint($mobile) {
+            padding: 6.2rem 3.1rem 6.5rem;
+        }
     }
 
     &__product {
         display: flex;
+
+        @include breakpoint($tablet) {
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint($mobile) {
+            justify-content: center;
+        }
     }
 
     &__product-photo {
@@ -34,6 +30,10 @@
         width: 100%;
         max-width: 133px;
         height: 178px;
+
+        @include breakpoint($mobile) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__product-photo__img {
@@ -46,9 +46,28 @@
 
     &__product-info {
         display: flex;
-        justify-content: space-between;
         width: 100%;
+        justify-content: space-between;
         padding-left: 3.8rem;
+
+        @include breakpoint($tablet) {
+            padding-left: 0;
+        }
+
+        @include breakpoint($mobile) {
+            width: 100%;
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__product-info__inner {
+        @include breakpoint($mobile) {
+            order: 1;
+            text-align: center;
+            margin-top: 2rem;
+        }
     }
 
     &__product-info__title {
@@ -60,10 +79,15 @@
         text-decoration: none;
         letter-spacing: -0.01em;
 
+        padding-right: 1rem;
+
+        @include breakpoint($mobile) {
+            padding-right: 0;
+        }
+
         &:hover {
             text-decoration: underline;
         }
-
     }
 
     &__product-info__price {
@@ -93,9 +117,23 @@
         }
     }
 
+    &__product-info__count {
+        @include breakpoint($mobile-large) {
+            width: 40%;
+        }
+        
+        @include breakpoint($mobile) {
+            width: 80%;
+        }
+    }
+
     &__footer {
         margin-top: auto;
         padding: 2.5rem 7.1rem 6.5rem;
+
+        @include breakpoint($mobile) {
+            padding: 2.5rem 3.1rem 6.5rem;
+        }
     }
 
     &__footer-price {

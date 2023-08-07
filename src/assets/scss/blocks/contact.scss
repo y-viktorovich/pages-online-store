@@ -1,22 +1,43 @@
 .contact {
     padding: 11.1rem 0 10rem;
 
+    @include breakpoint($mobile) {
+        padding: 6.1rem 0 5rem;
+    }
+
     &__inner {
         display: flex;
         flex-wrap: wrap;
 
         margin: 0 -5.3rem;
+
+        @include breakpoint($tablet) {
+            margin: 0 -2.3rem;
+        }
     }
 
     &__info {
         width: 44.23%;
         padding: 0 5.3rem;
         margin-bottom: 3rem;
+
+        @include breakpoint($tablet) {
+            padding: 0 2.3rem;
+        }
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__title {
         &::after {
             margin: 2.2rem 0 2.7rem;
+
+            @include breakpoint($mobile-large) {
+                margin: 2.2rem auto 2.7rem;
+            }
         }
     }
 
@@ -28,6 +49,17 @@
         letter-spacing: -0.01em;
 
         margin-bottom: 3rem;
+
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__address {
+        @include breakpoint($mobile-large) {
+            max-width: 500px;
+            margin: 0 auto;
+        }
     }
 
     &__address-item {
@@ -63,6 +95,10 @@
         font-weight: 700;
         line-height: 2.2;
         letter-spacing: -0.01em;
+
+        @include breakpoint($mobile) {
+            font-size: 2rem;
+        }
     }
 
     &__address-item__link {
@@ -73,6 +109,10 @@
         letter-spacing: -0.01em;
 
         margin-top: -0.5rem;
+
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
 
         a {
             color: inherit;
@@ -88,10 +128,22 @@
         width: 55.77%;
         padding: 0 5.3rem;
         margin-bottom: 3rem;
+
+        @include breakpoint($tablet) {
+            padding: 0 2.3rem;
+        }
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+        }
     }
 
     &__form {
         max-width: 606px;
+
+        @include breakpoint($mobile-large) {
+            margin: 0 auto;
+        }
     }
 
     &__input,
@@ -135,12 +187,21 @@
             max-width: 299px;
             margin-right: .2rem;
             background-image: url('../images/svg/user.svg');
+
+            @include breakpoint($notebook) {
+                margin-bottom: 1.5rem;
+                max-width: none;
+            }
         }
 
         &--mail {
             width: 100%;
             max-width: 299px;
             background-image: url('../images/svg/message.svg');
+
+            @include breakpoint($notebook) {
+                max-width: none;
+            }
         }
 
         &--tel {

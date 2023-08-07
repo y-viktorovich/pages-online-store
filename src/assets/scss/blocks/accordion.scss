@@ -30,6 +30,15 @@
                 border-bottom-color: transparent;
             }
 
+            @include breakpoint($mobile-large) {
+                .accordion__item-header {
+                    border-bottom-color: rgba($blue, 20%);
+                }
+
+                .accordion__item-text {
+                    border-bottom-color: rgba($blue, 20%);
+                }
+            }
         }
     }
 
@@ -46,6 +55,10 @@
         cursor: pointer;
 
         position: relative;
+
+        @include breakpoint($mobile) {
+            font-size: 2rem;
+        }
 
         &::before {
             content: '';
@@ -77,6 +90,10 @@
         color: $gray;
         line-height: 1.8;
         letter-spacing: -0.01em;
+
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
 
         p {
             margin-bottom: 2rem;

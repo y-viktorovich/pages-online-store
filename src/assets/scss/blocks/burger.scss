@@ -1,0 +1,80 @@
+
+.burger {
+    width: 38px;
+    height: 26px;
+    position: relative;
+    padding: 0;
+    background: none;
+    border: none;
+
+    font-size: 0;
+    color: transparent;
+
+    display: none;
+
+    @include breakpoint($notebook) {
+        display: block;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__line {
+        display: block;
+        width: 38px;
+        margin: 4px 0;
+        height: 3px;
+        background-color: #fff;
+    
+        transition: transform .2s ease-out, width .2s ease-out;
+    }
+
+    &__line:nth-child(1) {
+        width: 23px;
+        margin-left: auto;
+    
+    }
+
+    &.active .burger__line:nth-child(1),
+    &.active .burger__line:nth-child(3) {
+        transform-origin: right;
+    }
+
+    &.active .burger__line:nth-child(1),
+    &.active .burger__line:nth-child(3) {
+        width: 0;
+    }
+
+    &.active .burger__line:nth-child(2),
+    &.active .burger__line:nth-child(4) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        transform-origin: center;
+    }
+
+    &.active .burger__line:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    &.active .burger__line:nth-child(4) {
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

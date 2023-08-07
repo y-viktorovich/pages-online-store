@@ -2,11 +2,19 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin: 0 -4.1rem;
+    margin: 0 -4.1rem 6rem;
+
+    @include breakpoint($mobile-large) {
+        margin: 0 auto 6rem;
+    }
 
     &__item {
         width: 50%;
         padding: 0 4.1rem;
-        margin-bottom: 3rem;
+
+        @include breakpoint($mobile-large) {
+            width: 100%;
+            padding: 0;
+        }
     }
 }

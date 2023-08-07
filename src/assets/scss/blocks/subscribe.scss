@@ -2,9 +2,17 @@
     padding: 15rem 0;
     text-align: center;
 
+    @include breakpoint($tablet) {
+        padding: 8.5rem 0;
+    }
+
     &__inner {
-        padding: 12.1rem 23rem;
+        padding: 12.1rem 2rem;
         background-color: $yellow;
+
+        @include breakpoint($tablet) {
+            padding: 8.5rem 2rem;
+        }
     }
 
     &__content {
@@ -13,6 +21,11 @@
     }
 
     &__title {
+
+        @include breakpoint($mobile) {
+            font-size: 3rem;
+        }
+
         &::after {
             background-color: $blue;
             margin: 1.7rem auto 2rem;
@@ -27,13 +40,22 @@
         letter-spacing: -0.01em;
 
         margin-bottom: 3.8rem;
+
+        @include breakpoint($mobile) {
+            font-size: 1.6rem;
+        }
     }
 
     &__form {
         max-width: 840px;
+        margin: 0 auto;
 
         .form__group {
             width: 63%;
+
+            @include breakpoint($tablet) {
+                width: 100%;
+            }
         }
     }
 
@@ -79,6 +101,11 @@
         background-color: $blue;
 
         margin-left: 1.1rem;
+
+        @include breakpoint($tablet) {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 }
 

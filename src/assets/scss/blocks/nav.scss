@@ -3,16 +3,53 @@
     display: flex;
     justify-content: space-between;
 
-    &__inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    @include breakpoint($notebook) {
+        display: none;
+        width: 100%;
+        height: calc(100vh - 105px);
+        padding-top: 1rem;
+        overflow: auto;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+
+        background-color: rgba($blue, .8);
+
+        flex-direction: column;
+        justify-content: right;
     }
 
     &__social {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include breakpoint($notebook) {
+            justify-content: right;
+            order: 2;
+            margin-top: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint($notebook) {
+            align-items: end;
+            flex-direction: column;
+            text-align: right;
+            width: 100%;
+            order: 1;
+
+            & .btn {
+                margin-right: 2rem;
+            }
+        }
     }
 
     &__social-link {
@@ -27,6 +64,7 @@
         border: 1px solid $white;
 
         transition: background-color .2s linear;
+        
 
         & + .nav__social-link {
             margin-left: 1rem;
@@ -86,7 +124,13 @@
 
         transition: color .2s linear, background-color .2s linear;
 
-        
+        @include breakpoint($notebook) {
+            display: block;
+            width: 100%;
+            height: auto;
+
+            padding: 2rem;
+        }
 
         &:hover {
             background-color: $white;
@@ -133,18 +177,14 @@
     &__link-icon__img {
         width: 22px;
         height: 21px;
-        
 
         stroke: $white;
         fill: transparent;
 
-
         transition: stroke .2s linear;
-
     }
 
     &__link-icon__img-bage {
-        // display: block;
         height: 21px;
         min-width: 21px;
 
@@ -164,10 +204,23 @@
 
         background: $yellow;
         border-radius: 50%;
+
+
+        @include breakpoint($notebook) {
+            top: 10px;
+            left: auto;
+            right: 5px;
+            max-width: 21px;
+        }
     }
 }
 
 .nav__link-icon {
     margin-right: 1rem;
     position: relative;
+
+    @include breakpoint($notebook) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
 }

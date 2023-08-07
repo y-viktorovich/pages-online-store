@@ -5,6 +5,10 @@
         height: 700px;
 
         margin-bottom: 1.5rem;
+
+        @include breakpoint($notebook-large) {
+            height: auto;
+        }
     }
 
     &__photo-item__img {
@@ -13,7 +17,7 @@
         object-fit: cover;
         object-position: center;
         border-radius: 5px;
-        box-shadow: 0 35px 25px rgba(4, 11, 20, 0.1);
+        box-shadow: 0 35px 25px rgba($dark, 0.1);
     }
 
     &__date {
@@ -39,6 +43,10 @@
         line-height: 1.4;
 
         margin-bottom: 1.1rem;
+
+        @include breakpoint($notebook-large) {
+            font-size: 2.5rem;
+        }
     }
 
     &__text {
@@ -47,6 +55,10 @@
         color: $gray;
         line-height: 1.7;
         letter-spacing: -0.01em;
+
+        @include breakpoint($notebook-large) {
+            font-size: 1.6rem;
+        }
     }
 
     &__list {
@@ -58,6 +70,14 @@
         
         margin-top: 2.2rem;
         padding-left: 8rem;
+
+        @include breakpoint($notebook-large) {
+            font-size: 1.6rem;
+        }
+
+        @include breakpoint($mobile-large) {
+            padding-left: 4rem;
+        }
 
         &--decimal {
             list-style: decimal;
@@ -91,5 +111,14 @@
         background-image: url('../images/svg/quote.svg');
         background-repeat: no-repeat;
         background-position: 25px top;
+
+        @include breakpoint($tablet) {
+            padding: 5.3rem 5.4rem;
+        }
+
+        @include breakpoint($mobile-large) {
+            padding: 5.3rem 2rem;
+            font-size: 1.6rem;
+        }
     }
 }

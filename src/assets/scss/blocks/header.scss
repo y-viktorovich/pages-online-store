@@ -1,7 +1,7 @@
 .header {
     width: 100%;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -13,11 +13,14 @@
         justify-content: space-between;
 
         min-height: 105px;
+
+        @include breakpoint($notebook) {
+            align-items: center;
+        }
     }
 
     &__logo {
         display: flex;
-        justify-content: center;
         align-items: center;
 
         margin-right: 3.3rem;
