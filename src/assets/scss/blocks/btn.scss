@@ -23,6 +23,15 @@
         color: $white;
     }
 
+    &:focus {
+        background-color: darken($yellow, 20%);
+        outline: none;
+    }
+
+    &:active {
+        background-color: darken($yellow, 10%);
+    }
+
     &--transparent {
         background-color: transparent;
     }
@@ -36,6 +45,14 @@
         &:hover {
             background-color: $blue;
             color: $white;
+        }
+
+        &:focus {
+            background-color: $blue-sky;
+        }
+    
+        &:active {
+            background-color: darken($blue-sky, 60%);
         }
     }
 

@@ -785,6 +785,15 @@ body.show-nav .header {
     color: #fff;
 }
 
+.btn:focus {
+    background-color: #db9e00;
+    outline: none;
+}
+
+.btn:active {
+    background-color: #ffbc0f;
+}
+
 .btn--transparent {
     background-color: transparent;
 }
@@ -798,6 +807,14 @@ body.show-nav .header {
 .btn--blue:hover {
     background-color: #1B3764;
     color: #fff;
+}
+
+.btn--blue:focus {
+    background-color: #E8ECF2;
+}
+
+.btn--blue:active {
+    background-color: #3d4f6b;
 }
 
 .btn--big {
@@ -1121,6 +1138,12 @@ body.show-nav .header {
     font-weight: 400;
 }
 
+@media screen and (max-width: 565px) {
+    .statistic--assortment .statistic__header-item span {
+        font-size: 1.2rem;
+    }
+}
+
 .statistic--assortment .statistic__item {
     color: #969AA0;
 }
@@ -1129,6 +1152,12 @@ body.show-nav .header {
     .statistic--assortment .statistic__item {
         text-align: left;
         width: auto;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .statistic--assortment .statistic__item {
+        font-size: 1.2rem;
     }
 }
 
@@ -1150,6 +1179,14 @@ body.show-nav .header {
         display: -ms-flexbox;
         display: flex;
         font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .statistic__header-item {
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 1.6rem;
     }
 }
 
@@ -1191,6 +1228,12 @@ body.show-nav .header {
 @media screen and (max-width: 767px) {
     .statistic__item {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .statistic__item {
+        font-size: 1.2rem;
     }
 }
 
@@ -3566,6 +3609,10 @@ body.show-nav .header {
     margin: 0;
 }
 
+.product__description {
+    min-height: 350px;
+}
+
 .product__description-header {
     display: -ms-flexbox;
     display: flex;
@@ -4268,7 +4315,7 @@ body.show-nav .header {
 }
 
 .contact__checkbox ~ label {
-    width: 25px;
+    min-width: 25px;
     height: 25px;
     border: 1px solid #969AA0;
     border-radius: 0.5rem;
@@ -4397,7 +4444,7 @@ body.show-nav .header {
     display: none;
     padding: 0 0 1.1rem 3.2rem;
     font-family: "Inter", sans-serif;
-    color: 1.9rem;
+    font-size: 1.9rem;
     color: #969AA0;
     line-height: 1.8;
     letter-spacing: -0.01em;

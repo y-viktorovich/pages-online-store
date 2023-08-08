@@ -158,7 +158,7 @@ const validateInputs = () => {
 
     if (phoneValue === '') {
         setError(phone, 'Please enter your phone number');
-    } else if (!isValidPhone(phoneValue)){
+    } else if (!isValidPhone(phoneValue)) {
         setError(phone, 'Please enter your phone number in the correct format');
     } else {
         setSuccess(phone);
@@ -222,6 +222,7 @@ accordion.forEach(element => {
 // Counter
 
 totalUsdPrice(calcCartPrice());
+checkCartStatus();
 
 window.addEventListener('click', (event) => {
 
@@ -298,11 +299,14 @@ function totalUsdPrice(totalPrice) {
 }
 
 function checkCartStatus() {
-    const cartContent = document.querySelector('.cart__content');
+    const cartContent = document.querySelector('.cart__content'),
+          cartCountNumber = document.querySelector('.nav__link-icon__img-bage');
 
     if (cartContent.children.length == 0) {
         cartContent.innerText = 'Your cart is empty';
     }
+    
+    cartCountNumber.innerText = cartContent.children.length < 10 ? `0${cartContent.children.length}` : cartContent.children.length;
 }
 
 

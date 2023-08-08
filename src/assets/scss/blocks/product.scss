@@ -230,6 +230,10 @@
         }
     }
 
+    &__description {
+        min-height: 350px;
+    }
+
     &__description-header {
         display: flex;
         justify-content: center;

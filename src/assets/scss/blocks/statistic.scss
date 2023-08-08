@@ -19,6 +19,9 @@
                 font-size: 1.8rem;
                 font-weight: 400;
 
+                @include breakpoint($mobile) {
+                    font-size: 1.2rem;
+                }
             }
         }
 
@@ -28,6 +31,10 @@
             @include breakpoint($notebook-large) {
                 text-align: left;
                 width: auto;
+            }
+
+            @include breakpoint($mobile) {
+                font-size: 1.2rem;
             }
         }
     }
@@ -50,6 +57,11 @@
         @include breakpoint($mobile-large) {
             display: flex;
             font-size: 2.2rem;
+        }
+
+        @include breakpoint($mobile) {
+            display: flex;
+            font-size: 1.6rem;
         }
 
         &::before {
@@ -91,6 +103,10 @@
 
         @include breakpoint($mobile-large) {
             width: auto;
+        }
+
+        @include breakpoint($mobile) {
+            font-size: 1.2rem;
         }
     }
 }

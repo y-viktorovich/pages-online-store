@@ -222,7 +222,7 @@
         display: none;
 
         & ~ label {
-            width: 25px;
+            min-width: 25px;
             height: 25px;
             border: 1px solid $gray;
             border-radius: .5rem;
