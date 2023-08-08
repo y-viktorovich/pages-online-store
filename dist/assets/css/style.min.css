@@ -385,6 +385,13 @@ body {
   font-size: 1.9rem;
   color: #969AA0;
 }
+body.show-nav, body.no-scroll {
+  overflow: hidden;
+}
+body.show-nav .header {
+  background-color: #162c50;
+  box-shadow: 0 2px 15px #162c50;
+}
 
 *,
 *:before,
@@ -394,6 +401,13 @@ body {
 
 /* Blocks
 =============================*/
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -401,6 +415,11 @@ body {
   left: 0;
   z-index: 1000;
   background-color: #1B3764;
+  transition: background-color 0.2s linear, box-shadow 0.2s linear;
+}
+.header--darken {
+  background-color: #162c50;
+  box-shadow: 0 2px 15px #162c50;
 }
 .header__inner {
   display: flex;
@@ -458,18 +477,24 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .nav {
-    display: none;
     width: 100%;
     height: calc(100vh - 105px);
     padding-top: 1rem;
     overflow: auto;
+    flex-direction: column;
+    justify-content: right;
     position: absolute;
     top: 100%;
     left: 0;
+    right: 0;
     z-index: 1000;
     background-color: rgba(27, 55, 100, 0.8);
-    flex-direction: column;
-    justify-content: right;
+    background-size: cover;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  .nav.show {
+    transform: translateX(0);
   }
 }
 .nav__social {
@@ -645,6 +670,7 @@ body {
   padding: 1.05em 2.78em;
   text-decoration: none;
   vertical-align: middle;
+  cursor: pointer;
   font-family: "Cardo", sans-serif;
   font-size: 1.9rem;
   color: #1B3764;
@@ -1214,7 +1240,7 @@ body {
 @media screen and (max-width: 991px) {
   .info__content {
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 2rem 0;
   }
 }
 .info__text {
@@ -1486,6 +1512,7 @@ body {
 @media screen and (max-width: 991px) {
   .conclusion__content {
     padding-right: 0;
+    margin: 0 auto 6rem;
     width: 100%;
   }
 }
@@ -1603,6 +1630,11 @@ body {
   padding: 4.8rem 1rem 0 3.2rem;
   background-color: #fff;
   box-shadow: 0 35px 25px rgba(4, 11, 20, 0.04);
+}
+@media screen and (max-width: 565px) {
+  .chapters__item {
+    padding: 4.8rem 1rem 0 1rem;
+  }
 }
 .chapters__header {
   margin-bottom: 1.4rem;
@@ -2003,10 +2035,34 @@ body {
 .form__group {
   margin-bottom: 1.5rem;
 }
+.form__group.success input, .form__group.success textarea {
+  border-color: #436f64;
+  border-width: 2px;
+}
+.form__group.error input, .form__group.error textarea {
+  border-color: #df1111;
+  border-width: 2px;
+}
+.form__group.error .form__error {
+  max-width: 300px;
+}
+.form__group .form__error {
+  font-size: 1.5rem;
+  color: rgb(180, 61, 61);
+}
 .form__checkbox {
   display: flex;
   align-items: center;
   padding: 1.3rem 0 4rem;
+}
+.form__header {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .form__header {
+    display: block;
+  }
 }
 
 .subscribe {
@@ -2109,6 +2165,7 @@ body {
 
 .footer {
   background-color: #1B3764;
+  margin-top: auto;
 }
 .footer__inner {
   display: flex;
@@ -2141,6 +2198,11 @@ body {
 @media screen and (max-width: 991px) {
   .footer__nav {
     width: 100%;
+  }
+}
+@media screen and (max-width: 565px) {
+  .footer__nav {
+    padding: 0;
   }
 }
 .footer__title {
@@ -2996,10 +3058,16 @@ body {
   z-index: 1000;
   background-color: rgba(27, 55, 100, 0.8);
 }
+.modal.show {
+  display: flex;
+}
 .modal__inner {
   width: 100%;
   max-width: 800px;
   margin: auto;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .modal__header {
   background-color: #FFCA42;
@@ -3046,9 +3114,6 @@ body {
     right: 20px;
   }
 }
-.modal__close:hover {
-  transform: rotateZ(-90deg);
-}
 .modal__close-item {
   background-color: #1B3764;
   width: 100%;
@@ -3086,6 +3151,9 @@ body {
 }
 .cart__product {
   display: flex;
+}
+.cart__product + .cart__product {
+  margin-top: 4rem;
 }
 @media screen and (max-width: 991px) {
   .cart__product {
@@ -3382,12 +3450,11 @@ body {
 .contact__input--name, .contact__input-textarea--name {
   width: 100%;
   max-width: 299px;
-  margin-right: 0.2rem;
+  margin-right: 0.8rem;
   background-image: url("../images/svg/user.svg");
 }
 @media screen and (max-width: 1199px) {
   .contact__input--name, .contact__input-textarea--name {
-    margin-bottom: 1.5rem;
     max-width: none;
   }
 }
@@ -3523,7 +3590,7 @@ body {
   display: none;
   padding: 0 0 1.1rem 3.2rem;
   font-family: "Inter", sans-serif;
-  color: 1.9rem;
+  font-size: 1.9rem;
   color: #969AA0;
   line-height: 1.8;
   letter-spacing: -0.01em;
@@ -3660,7 +3727,7 @@ body {
   }
 }
 
-.error {
+.notfound {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3669,24 +3736,24 @@ body {
   background-position: center;
   background-size: cover;
 }
-.error__content {
+.notfound__content {
   display: block;
   max-width: 589px;
   margin: 0 auto;
   text-align: center;
 }
-.error__img {
+.notfound__img {
   width: 100%;
   max-width: 471px;
   height: 215px;
   margin-bottom: 3.5rem;
 }
 @media screen and (max-width: 565px) {
-  .error__img {
+  .notfound__img {
     height: auto;
   }
 }
-.error__title {
+.notfound__title {
   font-family: "Cardo", sans-serif;
   font-size: 4rem;
   color: #1B3764;
@@ -3696,11 +3763,11 @@ body {
   margin-bottom: 1.6rem;
 }
 @media screen and (max-width: 565px) {
-  .error__title {
+  .notfound__title {
     font-size: 2.5rem;
   }
 }
-.error__text {
+.notfound__text {
   font-family: "Inter", sans-serif;
   font-size: 1.9rem;
   color: #969AA0;
@@ -3709,7 +3776,7 @@ body {
   margin-bottom: 4.1rem;
 }
 @media screen and (max-width: 565px) {
-  .error__text {
+  .notfound__text {
     font-size: 1.6rem;
   }
 }
@@ -3729,6 +3796,10 @@ body {
 }
 .secure .form__group {
   margin-bottom: 2rem;
+}
+.secure .form__group .form__error {
+  max-width: none;
+  text-align: left;
 }
 .secure__inner {
   width: 100%;
@@ -3964,4 +4035,28 @@ body {
 
 .full-width {
   width: 100%;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+/* Animations
+=============================*/
+.fade-down {
+  animation: fadedown 0.5s ease-in-out normal forwards;
+}
+@keyframes fadedown {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

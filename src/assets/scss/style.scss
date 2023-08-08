@@ -13,6 +13,18 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.9rem;
     color: $gray;
+
+    &.show-nav,
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    &.show-nav {
+        .header {
+            background-color: darken($blue, 5%);
+            box-shadow: 0 2px 15px darken($blue, 5%);
+        }
+    }
 }
 
 *,
@@ -25,6 +37,7 @@ body {
 /* Blocks
 =============================*/
 
+@import "blocks/page";
 @import "blocks/header";
 @import "blocks/container";
 @import "blocks/nav";
@@ -55,7 +68,7 @@ body {
 @import "blocks/question";
 @import "blocks/accordion";
 @import "blocks/blog";
-@import "blocks/error";
+@import "blocks/notfound";
 @import "blocks/secure";
 @import "blocks/licenses";
 @import "blocks/changelog";
@@ -66,6 +79,12 @@ body {
 =============================*/
 
 @import "helpers";
+
+/* Animations
+=============================*/
+
+@import "animations";
+
 
 
 

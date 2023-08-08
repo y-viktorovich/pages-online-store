@@ -13,11 +13,20 @@
 
     background-color: rgba($blue, .8);
 
+    &.show {
+        display: flex;
+    }
+
     &__inner {
         width: 100%;
         max-width: 800px;
 
         margin: auto;
+
+        transform: translateY(-50px);
+        opacity: 0;
+
+        transition: opacity .3s ease-in-out, transform .3s ease-in-out;
     }
 
     &__header {
@@ -67,10 +76,6 @@
 
         @include breakpoint($mobile) {
             right: 20px;
-        }
-
-        &:hover {
-            transform: rotateZ(-90deg);
         }
     }
 

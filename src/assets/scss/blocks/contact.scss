@@ -185,11 +185,10 @@
         &--name {
             width: 100%;
             max-width: 299px;
-            margin-right: .2rem;
+            margin-right: .8rem;
             background-image: url('../images/svg/user.svg');
 
             @include breakpoint($notebook) {
-                margin-bottom: 1.5rem;
                 max-width: none;
             }
         }

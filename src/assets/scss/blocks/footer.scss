@@ -1,16 +1,13 @@
 .footer {
 
     background-color: $blue;
+    margin-top: auto;
 
     &__inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 8.4rem 0 2.4rem;
-
-        // @include breakpoint($notebook) {
-        //     flex-direction: column;
-        // }
     }
 
     &__block {
@@ -37,6 +34,10 @@
 
         @include breakpoint($tablet) {
             width: 100%;
+        }
+
+        @include breakpoint($mobile) {
+            padding: 0;
         }
     }
 

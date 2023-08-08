@@ -87,9 +87,9 @@ title: Product
 
                     <div class="product__footer">
                         <div class="product__count">
-                            <button class="product__count-btn product__count-btn__minus" type="button">-</button>
-                            <input class="product__count-number" value="1" min="1" type="number" name="counter" autocomplete="off">
-                            <button class="product__count-btn product__count-btn__plus" type="button">+</button>
+                            <button class="product__count-btn product__count-btn__minus" type="button" data-action="minus">-</button>
+                            <input class="product__count-number" value="1" type="number" name="counter" autocomplete="off" data-counter>
+                            <button class="product__count-btn product__count-btn__plus" type="button" data-action="plus">+</button>
                         </div>
                         <button class="btn">Add to Cart</button>
                     </div>
@@ -98,8 +98,8 @@ title: Product
 
             <div class="product__description">
                 <div class="product__description-header">
-                    <a class="btn btn--xl btn--blue text-uppercase" href="#">Product Description</a>
-                    <a class="btn btn--xl btn--blue text-uppercase" href="#">Additional Info</a>
+                    <a class="btn btn--xl btn--blue text-uppercase" href="#" data-tab>Product Description</a>
+                    <a class="btn btn--xl btn--blue text-uppercase" href="#" data-tab>Additional Info</a>
                 </div>
 
                 <div class="product__description-content">
@@ -126,6 +126,32 @@ title: Product
                             you need to be sure there isn't anything embarrassing hidden
                             in the middle of text. All the Lorem Ipsum generators on
                             the Internet tend to repeat predefined chunks as necessary.
+                        </div>
+                    </div>
+                </div><!-- /.product__description-content -->
+
+                <div class="product__description-content">
+                    <div class="product__description-content__item">
+                        <div class="product__description-content__item-title">
+                            Do you like a pizza and read books?
+                        </div>
+
+                        <div class="product__description-content__item-text">
+                            There are many variations of passages of Lorem Ipsum available,
+                            but the majority have suffered alteration in some form,
+                            bypassed.
+                        </div>
+                    </div>
+
+                    <div class="product__description-content__item">
+                        <div class="product__description-content__item-title">
+                            Is this book for me? And why i have read this?
+                        </div>
+
+                        <div class="product__description-content__item-text">
+                            If you are going to use a passage of Lorem Ipsum,
+                            you need to be sure there isn't anything embarrassing hidden
+                            in the middle of text.
                         </div>
                     </div>
                 </div><!-- /.product__description-content -->
@@ -173,50 +199,3 @@ title: Product
         </div><!-- /.container__inner -->
     </div><!-- /.container -->
 </div><!-- /.details -->
-
-<!-- Modal -->
-<div class="modal">
-    <div class="modal__inner">
-        <div class="modal__header">
-            <div class="modal__title">Your Cart</div>
-
-            <button class="modal__close" type="button">
-                <span class="modal__close-item">close</span>
-            </button>
-        </div>
-
-        <div class="cart">
-            <div class="cart__content">
-                <div class="cart__product">
-                    <picture class="cart__product-photo">
-                        <source class="cart__product-photo__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
-                        <img class="cart__product-photo__img" src="assets/images/books/atomic-ones.jpg" alt="book">
-                    </picture>
-
-                    <div class="cart__product-info">
-                        <div class="cart__product-info__inner">
-                            <a class="cart__product-info__title" href="">Atomic One’s</a>
-                            <div class="cart__product-info__price">$30.00 USD</div>
-                            <button class="cart__product-info__btn" type="button">Remove</button>
-                        </div>
-
-                        <div class="product__count cart__product-info__count">
-                            <button class="product__count-btn product__count-btn__minus" type="button">-</button>
-                            <input class="product__count-number" value="1" min="1" type="number" name="counter" autocomplete="off">
-                            <button class="product__count-btn product__count-btn__plus" type="button">+</button>
-                        </div>
-                    </div>
-                </div><!-- /.cart__product -->
-            </div><!-- /.cart__content -->
-
-            <div class="cart__footer">
-                <div class="cart__footer-price">
-                    <div class="cart__footer-price__text">Sub-Total</div>
-                    <div class="cart__footer-price__count">$ 60.00 USD</div>
-                </div>
-
-                <button class="btn full-width">Continue to Checkout</button>
-            </div>
-        </div><!-- /.cart -->
-    </div><!-- /.cart__content -->
-</div><!-- /.modal -->

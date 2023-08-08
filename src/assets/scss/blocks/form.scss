@@ -2,11 +2,42 @@
 
     &__group {
         margin-bottom: 1.5rem;
+
+        &.success input,
+        &.success textarea {
+            border-color: #436f64;
+            border-width: 2px;
+        }
+
+        &.error input,
+        &.error textarea {
+            border-color: #df1111;
+            border-width: 2px;
+        }
+
+        &.error .form__error{
+            max-width: 300px;
+        }
+
+        & .form__error {
+            font-size: 1.5rem;
+            color: rgb(180, 61, 61);
+        }
     }
 
     &__checkbox {
         display: flex;
         align-items: center;
         padding: 1.3rem 0 4rem;
+    }
+
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint($notebook) {
+            display: block;
+        }
     }
 }

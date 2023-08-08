@@ -8,6 +8,13 @@
 
     background-color: $blue;
 
+    transition: background-color .2s linear, box-shadow .2s linear;
+
+    &--darken {
+        background-color: darken($blue, 5%);
+        box-shadow: 0 2px 15px darken($blue, 5%);
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;

@@ -16,6 +16,10 @@
     &__product {
         display: flex;
 
+        & + .cart__product {
+            margin-top: 4rem;
+        }
+
         @include breakpoint($tablet) {
             flex-wrap: wrap;
         }

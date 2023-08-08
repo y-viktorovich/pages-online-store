@@ -1,0 +1,67 @@
+<!-- Modal -->
+<div class="modal" id="cart-modal">
+    <div class="modal__inner">
+        <div class="modal__header">
+            <div class="modal__title">Your Cart</div>
+
+            <button class="modal__close" type="button" data-close>
+                <span class="modal__close-item">close</span>
+            </button>
+        </div>
+
+        <div class="cart">
+            <div class="cart__content">
+                <div class="cart__product">
+                    <picture class="cart__product-photo">
+                        <source class="cart__product-photo__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
+                        <img class="cart__product-photo__img" src="assets/images/books/atomic-ones.jpg" alt="book">
+                    </picture>
+
+                    <div class="cart__product-info">
+                        <div class="cart__product-info__inner">
+                            <a class="cart__product-info__title" href="">Atomic One’s</a>
+                            <div class="cart__product-info__price" data-price>$30.00 USD</div>
+                            <button class="cart__product-info__btn" type="button" data-delete>Remove</button>
+                        </div>
+
+                        <div class="product__count cart__product-info__count">
+                            <button class="product__count-btn product__count-btn__minus" type="button" data-action="minus">-</button>
+                            <input class="product__count-number" value="1" type="number" name="counter" autocomplete="off" data-counter>
+                            <button class="product__count-btn product__count-btn__plus" type="button" data-action="plus">+</button>
+                        </div>
+                    </div>
+                </div><!-- /.cart__product -->
+
+                <div class="cart__product">
+                    <picture class="cart__product-photo">
+                        <source class="cart__product-photo__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
+                        <img class="cart__product-photo__img" src="assets/images/books/atomic-ones.jpg" alt="book">
+                    </picture>
+
+                    <div class="cart__product-info">
+                        <div class="cart__product-info__inner">
+                            <a class="cart__product-info__title" href="">Atomic One’s</a>
+                            <div class="cart__product-info__price" data-price>$30.11 USD</div>
+                            <button class="cart__product-info__btn" type="button" data-delete>Remove</button>
+                        </div>
+
+                        <div class="product__count cart__product-info__count">
+                            <button class="product__count-btn product__count-btn__minus" type="button" data-action="minus">-</button>
+                            <input class="product__count-number" value="1" type="number" name="counter" autocomplete="off" data-counter>
+                            <button class="product__count-btn product__count-btn__plus" type="button" data-action="plus">+</button>
+                        </div>
+                    </div>
+                </div><!-- /.cart__product -->
+            </div><!-- /.cart__content -->
+
+            <div class="cart__footer">
+                <div class="cart__footer-price">
+                    <div class="cart__footer-price__text">Sub-Total</div>
+                    <div class="cart__footer-price__count" data-total>$ 30.00 USD</div>
+                </div>
+
+                <button class="btn full-width">Continue to Checkout</button>
+            </div>
+        </div><!-- /.cart -->
+    </div><!-- /.cart__content -->
+</div><!-- /.modal -->

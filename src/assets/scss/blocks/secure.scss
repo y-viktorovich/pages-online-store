@@ -11,6 +11,11 @@
 
     .form__group {
         margin-bottom: 2rem;
+
+        .form__error {
+            max-width: none;
+            text-align: left;
+        }
     }
 
     &__inner {

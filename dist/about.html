@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -12,512 +12,597 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#eeeeee">
+    <meta name="theme-color" content="#ffffff">
+    
     <title>About the Author</title>
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <a class="header__logo-link" href="index.html">
-                        <svg class="header__logo-icon">
-                            <use href="assets/images/svg/sprites.svg#logo"></use>
-                        </svg>
-    
-                        <span class="header__logo-name">Pages</span>
-                    </a>
-                </div>
-    
-                <div class="nav">
-                    <div class="nav__social">
-                        <a class="nav__social-link" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#facebook"></use>
+    <div class="page">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="index.html">
+                            <svg class="header__logo-icon">
+                                <use href="assets/images/svg/sprites.svg#logo"></use>
                             </svg>
-                        </a>
-    
-                        <a class="nav__social-link" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#twitter"></use>
-                            </svg>
-                        </a>
-    
-                        <a class="nav__social-link" href="#" target="_blank">
-                            <svg class="nav__social-link__icon">
-                                <use href="assets/images/svg/sprites.svg#linkedin"></use>
-                            </svg>
+        
+                            <span class="header__logo-name">Pages</span>
                         </a>
                     </div>
-    
-                    <div class="nav__inner">
-                        <a class="nav__link" href="index.html">Home</a>
-                        <a class="nav__link nav__link--arrow" href="#">Pages</a>
-                        <a class="nav__link" href="about.html">About</a>
-                        <a class="nav__link" href="#">Services</a>
-                        <a class="nav__link" href="contact.html">Contact</a>
-                        <a class="nav__link nav__link-icon" href="#">
-                            <svg class="nav__link-icon__img">
-                                <use href="assets/images/svg/sprites.svg#cart"></use>
-    
-                            </svg>
-                            <span class="nav__link-icon__img-bage">01</span>
-                        </a>
-    
-                        <a class="btn btn--sm" href="#">Order Today</a>
-                    </div>
-                </div><!-- /.nav -->
-    
-                <button class="burger">
-                    <span class="burger__line">menu</span>
-                    <span class="burger__line">menu</span>
-                    <span class="burger__line">menu</span>
-                    <span class="burger__line">menu</span>
-                </button>
-            </div><!-- /.header__inner -->
-        </div><!-- /.container -->
-    </header>
-    
-    <!-- Intro -->
-    <div class="intro intro--sm">
-        <div class="container">
-            <div class="intro__inner">
-                <div class="intro__content">
-                    <h1 class="intro__title">About the Author</h1>
-                    <div class="intro__text">
-                        There are many variations of passages of Lorem Ipsum available,  have suffered alteration in some form.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- About -->
-    <section class="section section--blue">
-        <div class="container">
-    
-            <div class="about">
-                <picture class="about__photo">
-                    <source class="about__photo-img" srcset="assets/images/author/about-2.webp" type="image/webp">
-                    <img class="about__photo-img" src="assets/images/author/about-2.jpg" alt="author">
-                </picture>
-    
-                <div class="about__content">
-                    <div class="about__info">
-                        <table class="about__table">
-                            <tbody>
-                                <tr class="about__table-row">
-                                    <td class="about__table-row__header">Country :</td>
-                                    <td class="about__table-row__item">
-                                        United Kingdom
-                                    </td>
-                                </tr>
-    
-                                <tr class="about__table-row">
-                                    <td class="about__table-row__header">Language :</td>
-                                    <td class="about__table-row__item">
-                                        English
-                                    </td>
-                                </tr>
-    
-                                <tr class="about__table-row">
-                                    <td class="about__table-row__header">Genre :</td>
-                                    <td class="about__table-row__item">
-                                        Historiography
-                                    </td>
-                                </tr>
-    
-                                <tr class="about__table-row">
-                                    <td class="about__table-row__header">Publication date :</td>
-                                    <td class="about__table-row__item">
-                                        1991
-                                    </td>
-                                </tr>
-    
-                                <tr class="about__table-row">
-                                    <td class="about__table-row__header">Share us on:</td>
-                                    <td class="about__table-row__item">
-                                        <a class="about__table-row__item-link" href="#" target="_blank">
-                                            <svg class="about__table-row__item-link__icon">
-                                                <use href="assets/images/svg/sprites.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-    
-                                        <a class="about__table-row__item-link" href="#" target="_blank">
-                                            <svg class="about__table-row__item-link__icon">
-                                                <use href="assets/images/svg/sprites.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-    
-                                        <a class="about__table-row__item-link" href="#" target="_blank">
-                                            <svg class="about__table-row__item-link__icon">
-                                                <use href="assets/images/svg/sprites.svg#linkedin"></use>
-                                            </svg>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table><!-- /.about__table -->
-                    </div><!-- /.about__info -->
-    
-                    <div class="about__contact">
-                        <div class="about__contact-title section__title">About Dr. John Abraham</div>
-                        <div class="about__contact-text">
-                            All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, that can combined with a handful of model sentence structures.
-                        </div>
-    
-                        <a class="btn btn--large">Contact now</a>
-                    </div>
-                </div><!-- /.about__content -->
-            </div><!-- /.about -->
-        </div><!-- /.container -->
-    </section><!-- /.section -->
-    
-    <div class="section">
-        <div class="container">
-    
-            <div class="story">
-                <div class="story__info">
-                    <div class="story__title section__title">My Story</div>
-                    <div class="story__text">
-                        Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.
-                    </div>
-    
-                    <div class="awards">
-                        <div class="awards__item">
-                            <div class="awards__count">
-                                <span class="awards__count-item">01</span>
-                            </div>
-                            <div class="awards__content">
-                                <h4 class="awards__title">Great Author Awards - 1996 & 2000</h4>
-                                <div class="awards__text">
-                                    How to navigate around the interface and toggle on/off the panels you wish to use.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="awards__item">
-                            <div class="awards__count">
-                                <span class="awards__count-item">02</span>
-                            </div>
-                            <div class="awards__content">
-                                <h4 class="awards__title">10 Times New York Times ® Best Seller</h4>
-                                <div class="awards__text">
-                                    How to navigate around the interface and toggle on/off the panels you wish to use.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="awards__item">
-                            <div class="awards__count">
-                                <span class="awards__count-item">03</span>
-                            </div>
-                            <div class="awards__content">
-                                <h4 class="awards__title">Writer of Hack Productivity</h4>
-                                <div class="awards__text">
-                                    How to navigate around the interface and toggle on/off the panels you wish to use.
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.awards -->
-                </div><!-- /.story__info -->
-    
-                <div class="story__photo">
-                    <picture class="story__photo-item">
-                        <source class="story__photo-item__img" srcset="assets/images/author/about-3.webp" type="image/webp">
-                        <img class="story__photo-item__img" src="assets/images/author/about-3.jpg" alt="author">
-                    </picture>
-                </div>
-            </div><!-- /.story -->
-        </div><!-- /.container -->
-    </div><!-- /.section -->
-    
-    <!-- Assortment -->
-    <div class="section section--blue">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Author’s Book Includes</h2>
-            </div>
-    
-            <div class="assortment">
-                <div class="assortment__item">
-                    <div class="assortment__photo">
-                        <picture class="assortment__photo-item">
-                            <source class="assortment__photo-item__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
-                            <img class="assortment__photo-item__img" src="assets/images/books/atomic-ones.jpg" alt="book">
-                        </picture>
-                    </div>
-    
-                    <div class="assortment__content">
-                        <div class="assortment__header">
-                            <div class="assortment__title">Atomic One’s</div>
-                        </div>
-    
-                        <div class="assortment__main">
-                            <div class="assortment__text">
-                                Many variations of passages of Lorem Ipsum willing araise  alteration in some form.
-                            </div>
-                        </div>
-    
-                        <div class="assortment__footer">
-                            <table class="statistic statistic--assortment">
-                                <thead class="statistic__header">
-                                    <th class="statistic__header-item">Pages:</th>
-                                    <th class="statistic__header-item">Length:</th>
-                                </thead>
-            
-                                <tbody class="statistic-content">
-                                    <tr class="statistic-row">
-                                        <td class="statistic__item">586pages</td>
-                                        <td class="statistic__item">10 Hours</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-    
-                            <a class="btn btn--transparent" href="#">Order Today</a>
-                        </div>
-                    </div><!-- /.assortment__content -->
-                </div><!-- /.assortment__item -->
-    
-                <div class="assortment__item">
-                    <div class="assortment__photo">
-                        <picture class="assortment__photo-item">
-                            <source class="assortment__photo-item__img" srcset="assets/images/books/the-dark-light.webp" type="image/webp">
-                            <img class="assortment__photo-item__img" src="assets/images/books/the-dark-light.jpg" alt="book">
-                        </picture>
-                    </div>
-    
-                    <div class="assortment__content">
-                        <div class="assortment__header">
-                            <div class="assortment__title">Atomic One’s</div>
-                        </div>
-    
-                        <div class="assortment__main">
-                            <div class="assortment__text">
-                                Many variations of passages of Lorem Ipsum willing araise  alteration in some form.
-                            </div>
-                        </div>
-    
-                        <div class="assortment__footer">
-                            <table class="statistic statistic--assortment">
-                                <thead class="statistic__header">
-                                    <th class="statistic__header-item">Pages:</th>
-                                    <th class="statistic__header-item">Length:</th>
-                                </thead>
-            
-                                <tbody class="statistic-content">
-                                    <tr class="statistic-row">
-                                        <td class="statistic__item">586pages</td>
-                                        <td class="statistic__item">10 Hours</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-    
-                            <a class="btn btn--transparent" href="#">Order Today</a>
-                        </div>
-                    </div><!-- /.assortment__content -->
-                </div><!-- /.assortment__item -->
-            </div><!-- /.assortment -->
-        </div><!-- /.container -->
-    </div><!-- /.section -->
-    
-    <!-- Company -->
-    <div class="section">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Trusted by the Best</h2>
-            </div>
-    
-            <div class="company">
-                <div class="company__item">
-                    <img class="company__img" src="assets/images/svg/company-1.svg" alt="amazen corp">
-                    <div class="company__title">Amazen Corp</div>
-                    <div class="company__text">
-                        A long established fact that a who looking at its layout.
-                    </div>
-                </div>
-    
-                <div class="company__item">
-                    <img class="company__img" src="assets/images/svg/company-2.svg" alt="amazen corp">
-                    <div class="company__title">Megan Books</div>
-                    <div class="company__text">
-                        A long established fact that a who looking at its layout.
-                    </div>
-                </div>
-    
-                <div class="company__item">
-                    <img class="company__img" src="assets/images/svg/company-3.svg" alt="amazen corp">
-                    <div class="company__title">Los Books</div>
-                    <div class="company__text">
-                        A long established fact that a who looking at its layout.
-                    </div>
-                </div>
-    
-                <div class="company__item">
-                    <img class="company__img" src="assets/images/svg/company-4.svg" alt="amazen corp">
-                    <div class="company__title">Urban Lib</div>
-                    <div class="company__text">
-                        A long established fact that a who looking at its layout.
-                    </div>
-                </div>
-            </div><!-- /.company -->
-        </div><!-- /.container -->
-    </div><!-- /.section -->
-    <!-- Subscribe -->
-    <section class="subscribe">
-        <div class="container">
-            <div class="subscribe__inner">
-                <div class="subscribe__content">
-                    <h3 class="subscribe__title section__title">Read a free chapter</h3>
-                    <div class="subscribe__text">
-                        Making this the first true value generator on the Internet.
-                        It of over 200 Latin words, combined with a handful.
-                    </div>
-                </div>
-    
-                <div class="subscribe__form">
-                    <form class="subscribe__form-request" id="form" action="/" method="post">
-                        <div class="form__group">
-                            <input  class="subscribe__input" placeholder="Your Email id..." ="email">
-                        </div>
-                        <button class="btn subscribe__btn">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__block">
-                    <div class="footer__nav flex-column">
-                        <div class="header__logo header__logo--footer">
-                            <a class="header__logo-link" href="index.html">
-                                <svg class="header__logo-icon">
-                                    <use href="assets/images/svg/sprites.svg#logo"></use>
-                                </svg>
-            
-                                <span class="header__logo-name">Pages</span>
-                            </a>
-                        </div>
-    
+        
+                    <nav class="nav" id="nav">
                         <div class="nav__social">
-                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                            <a class="nav__social-link" href="#" target="_blank">
                                 <svg class="nav__social-link__icon">
                                     <use href="assets/images/svg/sprites.svg#facebook"></use>
                                 </svg>
                             </a>
-    
-                            <a class="nav__social-link  nav__social-link--footer" href="#" target="_blank">
+        
+                            <a class="nav__social-link" href="#" target="_blank">
                                 <svg class="nav__social-link__icon">
                                     <use href="assets/images/svg/sprites.svg#twitter"></use>
                                 </svg>
                             </a>
-    
-                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+        
+                            <a class="nav__social-link" href="#" target="_blank">
                                 <svg class="nav__social-link__icon">
                                     <use href="assets/images/svg/sprites.svg#linkedin"></use>
                                 </svg>
                             </a>
-    
-                            <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
-                                <svg class="nav__social-link__icon">
-                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
+                        </div>
+        
+                        <div class="nav__inner">
+                            <a class="nav__link" href="index.html">Home</a>
+                            <a class="nav__link nav__link--arrow" href="#">Pages</a>
+                            <a class="nav__link" href="about.html">About</a>
+                            <a class="nav__link" href="#">Services</a>
+                            <a class="nav__link" href="contact.html">Contact</a>
+                            <a class="nav__link nav__link-icon" href="#" data-cart>
+                                <svg class="nav__link-icon__img">
+                                    <use href="assets/images/svg/sprites.svg#cart"></use>
+        
                                 </svg>
+                                <span class="nav__link-icon__img-bage">01</span>
                             </a>
+        
+                            <a class="btn btn--sm" href="#">Order Today</a>
+                        </div>
+                    </nav><!-- /.nav -->
+        
+                    <button class="burger" id="navToggle">
+                        <span class="burger__line">menu</span>
+                        <span class="burger__line">menu</span>
+                        <span class="burger__line">menu</span>
+                        <span class="burger__line">menu</span>
+                    </button>
+                </div><!-- /.header__inner -->
+            </div><!-- /.container -->
+        </header>
+        
+        <!-- Intro -->
+        <div class="intro intro--sm">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__content">
+                        <h1 class="intro__title">About the Author</h1>
+                        <div class="intro__text">
+                            There are many variations of passages of Lorem Ipsum available,  have suffered alteration in some form.
                         </div>
                     </div>
-    
-                </div><!-- /.footer__block -->
-    
-                <div class="footer__block">
-                    <div class="footer__nav">
-                        <div class="footer__title">Explore</div>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="#">Services</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="#">Appointments</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="contact.html">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__nav">
-                        <div class="footer__title">Utility Pages</div>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="#">Start here</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="#">Style guide</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="404.html">404 not found</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="password-protected.html">Password protected</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="licenses.html">Licenses</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="changelog.html">Changelog</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__nav">
-                        <div class="footer__title">Keep in Touch</div>
-                        <address class="footer__list">
-                            <table class="footer__table">
+                </div>
+            </div>
+        </div>
+        
+        <!-- About -->
+        <div class="section section--blue">
+            <div class="container">
+        
+                <div class="about">
+                    <picture class="about__photo">
+                        <source class="about__photo-img" srcset="assets/images/author/about-2.webp" type="image/webp">
+                        <img class="about__photo-img" src="assets/images/author/about-2.jpg" alt="author">
+                    </picture>
+        
+                    <div class="about__content">
+                        <div class="about__info">
+                            <table class="about__table">
                                 <tbody>
-                                    <tr class="footer__table-row">
-                                        <td class="footer__table-row__header">Address :</td>
-                                        <td class="footer__table-row__item">
-                                            <a href="#" target="_blank">24A Kingston St, Los Vegas NC 28202, USA.</a>
+                                    <tr class="about__table-row">
+                                        <td class="about__table-row__header">Country :</td>
+                                        <td class="about__table-row__item">
+                                            United Kingdom
                                         </td>
                                     </tr>
-    
-                                    <tr class="footer__table-row">
-                                        <td class="footer__table-row__header">Mail :</td>
-                                        <td class="footer__table-row__item">
-                                            <a href="mailto:support@doctors.com" target="_blank">support@doctors.com</a>
+        
+                                    <tr class="about__table-row">
+                                        <td class="about__table-row__header">Language :</td>
+                                        <td class="about__table-row__item">
+                                            English
                                         </td>
                                     </tr>
-    
-                                    <tr class="footer__table-row">
-                                        <td class="footer__table-row__header">Phone :</td>
-                                        <td class="footer__table-row__item">
-                                            <a href="tel:+221234567900" target="_blank">(+22) 123 - 4567 - 900</a>
+        
+                                    <tr class="about__table-row">
+                                        <td class="about__table-row__header">Genre :</td>
+                                        <td class="about__table-row__item">
+                                            Historiography
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="about__table-row">
+                                        <td class="about__table-row__header">Publication date :</td>
+                                        <td class="about__table-row__item">
+                                            1991
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="about__table-row">
+                                        <td class="about__table-row__header">Share us on:</td>
+                                        <td class="about__table-row__item">
+                                            <a class="about__table-row__item-link" href="#" target="_blank">
+                                                <svg class="about__table-row__item-link__icon">
+                                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+        
+                                            <a class="about__table-row__item-link" href="#" target="_blank">
+                                                <svg class="about__table-row__item-link__icon">
+                                                    <use href="assets/images/svg/sprites.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+        
+                                            <a class="about__table-row__item-link" href="#" target="_blank">
+                                                <svg class="about__table-row__item-link__icon">
+                                                    <use href="assets/images/svg/sprites.svg#linkedin"></use>
+                                                </svg>
+                                            </a>
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
-                        </address>
-                    </div><!-- /.footer__nav -->
-                </div><!-- /.footer__block -->
-            </div><!-- /.footer__inner -->
-    
-            <div class="footer__copy">
-                <span class="footer__copy-icon">&copy;</span> Drafted by <span class="footer__copy-text">Victorflow</span> - Powered by <span class="footer__copy-text">Webflow</span>
+                            </table><!-- /.about__table -->
+                        </div><!-- /.about__info -->
+        
+                        <div class="about__contact">
+                            <div class="about__contact-title section__title">About Dr. John Abraham</div>
+                            <div class="about__contact-text">
+                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, that can combined with a handful of model sentence structures.
+                            </div>
+        
+                            <a class="btn btn--large">Contact now</a>
+                        </div>
+                    </div><!-- /.about__content -->
+                </div><!-- /.about -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+        
+        <div class="section">
+            <div class="container">
+        
+                <div class="story">
+                    <div class="story__info">
+                        <div class="story__title section__title">My Story</div>
+                        <div class="story__text">
+                            Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.
+                        </div>
+        
+                        <div class="awards">
+                            <div class="awards__item">
+                                <div class="awards__count">
+                                    <span class="awards__count-item">01</span>
+                                </div>
+                                <div class="awards__content">
+                                    <h4 class="awards__title">Great Author Awards - 1996 & 2000</h4>
+                                    <div class="awards__text">
+                                        How to navigate around the interface and toggle on/off the panels you wish to use.
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="awards__item">
+                                <div class="awards__count">
+                                    <span class="awards__count-item">02</span>
+                                </div>
+                                <div class="awards__content">
+                                    <h4 class="awards__title">10 Times New York Times ® Best Seller</h4>
+                                    <div class="awards__text">
+                                        How to navigate around the interface and toggle on/off the panels you wish to use.
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="awards__item">
+                                <div class="awards__count">
+                                    <span class="awards__count-item">03</span>
+                                </div>
+                                <div class="awards__content">
+                                    <h4 class="awards__title">Writer of Hack Productivity</h4>
+                                    <div class="awards__text">
+                                        How to navigate around the interface and toggle on/off the panels you wish to use.
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.awards -->
+                    </div><!-- /.story__info -->
+        
+                    <div class="story__photo">
+                        <picture class="story__photo-item">
+                            <source class="story__photo-item__img" srcset="assets/images/author/about-3.webp" type="image/webp">
+                            <img class="story__photo-item__img" src="assets/images/author/about-3.jpg" alt="author">
+                        </picture>
+                    </div>
+                </div><!-- /.story -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+        
+        <!-- Assortment -->
+        <div class="section section--blue">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Author’s Book Includes</h2>
+                </div>
+        
+                <div class="assortment">
+                    <div class="assortment__item">
+                        <a class="assortment__photo" href="single-product.html">
+                            <picture class="assortment__photo-item">
+                                <source class="assortment__photo-item__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
+                                <img class="assortment__photo-item__img" src="assets/images/books/atomic-ones.jpg" alt="book">
+                            </picture>
+                        </a>
+        
+                        <div class="assortment__content">
+                            <div class="assortment__header">
+                                <a class="assortment__title" href="single-product.html">Atomic One’s</a>
+                            </div>
+        
+                            <div class="assortment__main">
+                                <div class="assortment__text">
+                                    Many variations of passages of Lorem Ipsum willing araise  alteration in some form.
+                                </div>
+                            </div>
+        
+                            <div class="assortment__footer">
+                                <table class="statistic statistic--assortment">
+                                    <thead>
+                                        <tr class="statistic__header">
+                                            <th class="statistic__header-item">Pages:</th>
+                                            <th class="statistic__header-item">Length:</th>
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody class="statistic-content">
+                                        <tr class="statistic-row">
+                                            <td class="statistic__item">586pages</td>
+                                            <td class="statistic__item">10 Hours</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
+                                <a class="btn btn--transparent" href="single-product.html">Order Today</a>
+                            </div>
+                        </div><!-- /.assortment__content -->
+                    </div><!-- /.assortment__item -->
+        
+                    <div class="assortment__item">
+                        <a class="assortment__photo" href="#">
+                            <picture class="assortment__photo-item">
+                                <source class="assortment__photo-item__img" srcset="assets/images/books/the-dark-light.webp" type="image/webp">
+                                <img class="assortment__photo-item__img" src="assets/images/books/the-dark-light.jpg" alt="book">
+                            </picture>
+                        </a>
+        
+                        <div class="assortment__content">
+                            <div class="assortment__header">
+                                <a class="assortment__title" href="#">The Dark Light</a>
+                            </div>
+        
+                            <div class="assortment__main">
+                                <div class="assortment__text">
+                                    Many variations of passages of Lorem Ipsum willing araise  alteration in some form.
+                                </div>
+                            </div>
+        
+                            <div class="assortment__footer">
+                                <table class="statistic statistic--assortment">
+                                    <thead>
+                                        <tr class="statistic__header">
+                                            <th class="statistic__header-item">Pages:</th>
+                                            <th class="statistic__header-item">Length:</th>
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody class="statistic-content">
+                                        <tr class="statistic-row">
+                                            <td class="statistic__item">586pages</td>
+                                            <td class="statistic__item">10 Hours</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
+                                <a class="btn btn--transparent" href="#">Order Today</a>
+                            </div>
+                        </div><!-- /.assortment__content -->
+                    </div><!-- /.assortment__item -->
+                </div><!-- /.assortment -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+        
+        <!-- Company -->
+        <div class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Trusted by the Best</h2>
+                </div>
+        
+                <div class="company">
+                    <div class="company__item">
+                        <img class="company__img" src="assets/images/svg/company-1.svg" alt="amazen corp">
+                        <div class="company__title">Amazen Corp</div>
+                        <div class="company__text">
+                            A long established fact that a who looking at its layout.
+                        </div>
+                    </div>
+        
+                    <div class="company__item">
+                        <img class="company__img" src="assets/images/svg/company-2.svg" alt="amazen corp">
+                        <div class="company__title">Megan Books</div>
+                        <div class="company__text">
+                            A long established fact that a who looking at its layout.
+                        </div>
+                    </div>
+        
+                    <div class="company__item">
+                        <img class="company__img" src="assets/images/svg/company-3.svg" alt="amazen corp">
+                        <div class="company__title">Los Books</div>
+                        <div class="company__text">
+                            A long established fact that a who looking at its layout.
+                        </div>
+                    </div>
+        
+                    <div class="company__item">
+                        <img class="company__img" src="assets/images/svg/company-4.svg" alt="amazen corp">
+                        <div class="company__title">Urban Lib</div>
+                        <div class="company__text">
+                            A long established fact that a who looking at its layout.
+                        </div>
+                    </div>
+                </div><!-- /.company -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+        <!-- Subscribe -->
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__inner">
+                    <div class="subscribe__content">
+                        <h3 class="subscribe__title section__title">Read a free chapter</h3>
+                        <div class="subscribe__text">
+                            Making this the first true value generator on the Internet.
+                            It of over 200 Latin words, combined with a handful.
+                        </div>
+                    </div>
+        
+                    <div class="subscribe__form">
+                        <form class="subscribe__form-request" id="form" action="/" method="post">
+                            <div class="form__group">
+                                <input  class="subscribe__input" id="email" placeholder="Your Email id..." type="email">
+                                <div class="form__error"></div>
+                            </div>
+                            <button class="btn subscribe__btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div><!-- /.container -->
-    </footer>
+        </section>        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__block">
+                        <div class="footer__nav flex-column">
+                            <div class="header__logo header__logo--footer">
+                                <a class="header__logo-link" href="index.html">
+                                    <svg class="header__logo-icon">
+                                        <use href="assets/images/svg/sprites.svg#logo"></use>
+                                    </svg>
+                
+                                    <span class="header__logo-name">Pages</span>
+                                </a>
+                            </div>
+        
+                            <div class="nav__social">
+                                <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                    <svg class="nav__social-link__icon">
+                                        <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                    </svg>
+                                </a>
+        
+                                <a class="nav__social-link  nav__social-link--footer" href="#" target="_blank">
+                                    <svg class="nav__social-link__icon">
+                                        <use href="assets/images/svg/sprites.svg#twitter"></use>
+                                    </svg>
+                                </a>
+        
+                                <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                    <svg class="nav__social-link__icon">
+                                        <use href="assets/images/svg/sprites.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+        
+                                <a class="nav__social-link nav__social-link--footer" href="#" target="_blank">
+                                    <svg class="nav__social-link__icon">
+                                        <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+        
+                    </div><!-- /.footer__block -->
+        
+                    <div class="footer__block">
+                        <div class="footer__nav">
+                            <div class="footer__title">Explore</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#">Services</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#">Appointments</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer__nav">
+                            <div class="footer__title">Utility Pages</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="#">Start here</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#">Style guide</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="404.html">404 not found</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="password-protected.html">Password protected</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="licenses.html">Licenses</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="changelog.html">Changelog</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer__nav">
+                            <div class="footer__title">Keep in Touch</div>
+                            <address class="footer__list">
+                                <table class="footer__table">
+                                    <tbody>
+                                        <tr class="footer__table-row">
+                                            <td class="footer__table-row__header">Address :</td>
+                                            <td class="footer__table-row__item">
+                                                <a href="#" target="_blank">24A Kingston St, Los Vegas NC 28202, USA.</a>
+                                            </td>
+                                        </tr>
+        
+                                        <tr class="footer__table-row">
+                                            <td class="footer__table-row__header">Mail :</td>
+                                            <td class="footer__table-row__item">
+                                                <a href="mailto:support@doctors.com" target="_blank">support@doctors.com</a>
+                                            </td>
+                                        </tr>
+        
+                                        <tr class="footer__table-row">
+                                            <td class="footer__table-row__header">Phone :</td>
+                                            <td class="footer__table-row__item">
+                                                <a href="tel:+221234567900" target="_blank">(+22) 123 - 4567 - 900</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </address>
+                        </div><!-- /.footer__nav -->
+                    </div><!-- /.footer__block -->
+                </div><!-- /.footer__inner -->
+        
+                <div class="footer__copy">
+                    <span class="footer__copy-icon">&copy;</span> Drafted by <span class="footer__copy-text">Victorflow</span> - Powered by <span class="footer__copy-text">Webflow</span>
+                </div>
+            </div><!-- /.container -->
+        </footer>
+        <!-- Modal -->
+        <div class="modal" id="cart-modal">
+            <div class="modal__inner">
+                <div class="modal__header">
+                    <div class="modal__title">Your Cart</div>
+        
+                    <button class="modal__close" type="button" data-close>
+                        <span class="modal__close-item">close</span>
+                    </button>
+                </div>
+        
+                <div class="cart">
+                    <div class="cart__content">
+                        <div class="cart__product">
+                            <picture class="cart__product-photo">
+                                <source class="cart__product-photo__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
+                                <img class="cart__product-photo__img" src="assets/images/books/atomic-ones.jpg" alt="book">
+                            </picture>
+        
+                            <div class="cart__product-info">
+                                <div class="cart__product-info__inner">
+                                    <a class="cart__product-info__title" href="">Atomic One’s</a>
+                                    <div class="cart__product-info__price" data-price>$30.00 USD</div>
+                                    <button class="cart__product-info__btn" type="button" data-delete>Remove</button>
+                                </div>
+        
+                                <div class="product__count cart__product-info__count">
+                                    <button class="product__count-btn product__count-btn__minus" type="button" data-action="minus">-</button>
+                                    <input class="product__count-number" value="1" type="number" name="counter" autocomplete="off" data-counter>
+                                    <button class="product__count-btn product__count-btn__plus" type="button" data-action="plus">+</button>
+                                </div>
+                            </div>
+                        </div><!-- /.cart__product -->
+        
+                        <div class="cart__product">
+                            <picture class="cart__product-photo">
+                                <source class="cart__product-photo__img" srcset="assets/images/books/atomic-ones.webp" type="image/webp">
+                                <img class="cart__product-photo__img" src="assets/images/books/atomic-ones.jpg" alt="book">
+                            </picture>
+        
+                            <div class="cart__product-info">
+                                <div class="cart__product-info__inner">
+                                    <a class="cart__product-info__title" href="">Atomic One’s</a>
+                                    <div class="cart__product-info__price" data-price>$30.11 USD</div>
+                                    <button class="cart__product-info__btn" type="button" data-delete>Remove</button>
+                                </div>
+        
+                                <div class="product__count cart__product-info__count">
+                                    <button class="product__count-btn product__count-btn__minus" type="button" data-action="minus">-</button>
+                                    <input class="product__count-number" value="1" type="number" name="counter" autocomplete="off" data-counter>
+                                    <button class="product__count-btn product__count-btn__plus" type="button" data-action="plus">+</button>
+                                </div>
+                            </div>
+                        </div><!-- /.cart__product -->
+                    </div><!-- /.cart__content -->
+        
+                    <div class="cart__footer">
+                        <div class="cart__footer-price">
+                            <div class="cart__footer-price__text">Sub-Total</div>
+                            <div class="cart__footer-price__count" data-total>$ 30.00 USD</div>
+                        </div>
+        
+                        <button class="btn full-width">Continue to Checkout</button>
+                    </div>
+                </div><!-- /.cart -->
+            </div><!-- /.cart__content -->
+        </div><!-- /.modal -->    </div>
+
+    <!-- Javascript-->
+    <script src="assets/js/app.js"></script>
 
 </body>
 </html>
