@@ -230,6 +230,16 @@
         }
     }
 
+    &__btn-img {
+        width: 22px;
+        height: 21px;
+        vertical-align: top;
+
+        stroke: $blue;
+        fill: transparent;
+        transition: stroke .2s linear;
+    }
+
     &__description {
         min-height: 350px;
     }
